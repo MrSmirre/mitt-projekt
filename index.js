@@ -40,16 +40,31 @@ if (age >= 15 || withAdult === true && hasTicket === true) {
 const isLoggedIn = true;
 const userRole = "admin";
 
-if (isLoggedIn === true) {
+if (isLoggedIn) {
     if (userRole === "admin") {
-        console.log("Välkommen till adminpanelen!")
+            console.log("Välkommen till adminpanelen!")
         } else { 
-            console.log("välkommen vanlig användare!") 
-            } 
-            } else {
-                console.log("Du måste logga in först!")
+            console.log("välkommen vanlig användare!")  
+        } 
+    } else {
+        console.log("Du måste logga in först!")
 }
 
+const trafficLight = "gul";
+
+switch (trafficLight) {
+    case "grön": console.log("kör");
+        break;
+    case "gul": 
+        console.log("Gör dig redo..."); 
+        break;
+    case "röd": 
+        console.log("stanna!"); 
+        break;
+        
+    default: 
+        console.log("okänd signal");
+}
 
 
 
