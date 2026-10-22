@@ -6,7 +6,7 @@ console.log(fruits[2]);
 
 const city = "Stockholm";
 
-const isLoggedIn = true;
+
 
 fruits[2] = "Jordgubbe";
 
@@ -36,6 +36,19 @@ if (age >= 15 || withAdult === true && hasTicket === true) {
 } else { 
         console.log("Du får inte komma in")
     }
+
+const isLoggedIn = true;
+const userRole = "admin";
+
+if (isLoggedIn === true) {
+    if (userRole === "admin") {
+        console.log("Välkommen till adminpanelen!")
+        } else { 
+            console.log("välkommen vanlig användare!") 
+            } 
+            } else {
+                console.log("Du måste logga in först!")
+}
 
 
 
