@@ -186,3 +186,11 @@ console.log("LIFTOFF!");
 
 
 const cart = ["Mjölk", "Godis", "Bröd", "Godis", "Äpple"]
+
+for ( const item of cart) {
+    if (item === "Godis") {
+        console.log("Onödig vara")
+    } else {
+        console.log("Köp: " + item)
+    }
+}
