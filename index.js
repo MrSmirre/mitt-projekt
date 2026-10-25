@@ -174,23 +174,58 @@
 // }
 
 
-for (let i = 10; i >= 0; i--)
+// for (let i = 10; i >= 0; i--)
 
-if (i === 5) {
-    console.log(i + " - Halvvägs kvar!")
-} else {
-    console.log("Sekunder kvar: " + i)
+// if (i === 5) {
+//     console.log(i + " - Halvvägs kvar!")
+// } else {
+//     console.log("Sekunder kvar: " + i)
+// }
+// console.log("LIFTOFF!");
+
+
+
+// const cart = ["Mjölk", "Godis", "Bröd", "Godis", "Äpple"]
+
+// for ( const item of cart) {
+//     if (item === "Godis") {
+//         console.log("Onödig vara")
+//     } else {
+//         console.log("Köp: " + item)
+//     }
+// }
+
+
+
+const weather = "sol";
+
+switch (weather) {
+    case "regn":
+        console.log("Ta med ett paraply");
+        break;
+
+    case "sol":
+        console.log("Ta på dig solglasögon");
+        break;
+
+    case "snö":
+        console.log("Ta på dig vinterjacka");
+        break;
+    default:
+    console.log("Kolla väderappen igen");
 }
-console.log("LIFTOFF!");
 
-
-
-const cart = ["Mjölk", "Godis", "Bröd", "Godis", "Äpple"]
-
-for ( const item of cart) {
-    if (item === "Godis") {
-        console.log("Onödig vara")
-    } else {
-        console.log("Köp: " + item)
-    }
+for (let i = 1; i <= 4; i++){
+    console.log("Varv " + i)
 }
+
+let varv = 10;
+
+while (varv > 0) {
+    console.log("Du har sprungit " + varv);
+
+    varv--;
+}
+
+console.log("Du har sprungit klart!");
+
