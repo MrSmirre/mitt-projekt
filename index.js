@@ -284,15 +284,42 @@
 
 // halsa("Viktor ", 29)
 
-const skapaKonto = (name, age, roll = "gäst") => {
-    console.log("hej " + name, age, roll)
+// const skapaKonto = (name, age, roll = "gäst") => {
+//     console.log("hej " + name, age, roll)
 
-    if (age < 18){
-        return { message: "Du är inte myndig"}
-    }
-    return { message: "Du är myndig"}
-}
+//     if (age < 18){
+//         return { message: "Du är inte myndig"}
+//     }
+//     return { message: "Du är myndig"}
+// }
 
-const skapaKontoObject = skapaKonto("Viktor", 28, "Student")
+// const skapaKontoObject = skapaKonto("Viktor", 28, "Student")
 
-console.log(skapaKontoObject.message)
+// console.log(skapaKontoObject.message)
+
+
+// const beraknaPris = (titel, pris, moms = 25) => {
+//     const total = pris * (1 + moms / 100);
+//     return { titel, totalPris: total };
+// }
+
+
+
+// En array med objekt (kundvagn)
+const varukorg = [
+  { namn: "Bok", pris: 120 },
+  { namn: "Penna", pris: 25 },
+  { namn: "Mapp", pris: 45 }
+];
+
+// Arrow function som tar emot en array
+const beraknaTotal = (produkter) => {
+  let summa = 0;
+  for (const p of produkter) {
+    summa += p.pris; // Lägger till priset
+  }
+  return summa;
+};
+
+const totalt = beraknaTotal(varukorg);
+console.log(`Att betala: ${totalt} kr`); // "Att betala: 190 kr"
