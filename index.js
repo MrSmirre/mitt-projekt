@@ -261,9 +261,38 @@
 //     return "hej ${namn}"
 // }
 
-const halsa = (name, age, job) => {
-    console.log("Hej " + name + " " + age + " " + job);
+// const halsa = (name, age, job) => {
+//     console.log("Hej " + name + " " + age + " " + job);
+// }
+
+
+
+// const halsa = (namn) => `Hej ${namn}`;
+
+// halsa();
+
+// const halsa = (name, age) => {
+//     console.log("Hej " + name + age)
+
+//     if (age < 18) {
+//         console.log("Du är inte myndig")
+//         return 
+//     }
+
+//     console.log("Du är myndig");
+// }
+
+// halsa("Viktor ", 29)
+
+const skapaKonto = (name, age, roll = "gäst") => {
+    console.log("hej " + name, age, roll)
+
+    if (age < 18){
+        return { message: "Du är inte myndig"}
+    }
+    return { message: "Du är myndig"}
 }
 
-halsa("Viktor", 29, "minecraft");
+const skapaKontoObject = skapaKonto("Viktor", 28, "Student")
 
+console.log(skapaKontoObject.message)
