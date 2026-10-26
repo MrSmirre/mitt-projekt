@@ -189,43 +189,81 @@
 
 // for ( const item of cart) {
 //     if (item === "Godis") {
-//         console.log("Onödig vara")
+//         console.log("Varning Onödig vara!")
 //     } else {
 //         console.log("Köp: " + item)
 //     }
 // }
 
+// const cart = ["Mjölk", "Godis", "Bröd", "Godis", "Äpple"];
+
+// for ( const item of cart) {
+//     if (item === "Godis"){
+//         console.log("Varning onödig vara!");
+//     } else {
+//         console.log("Köp: " + item);
+//     }
+// }
 
 
-const weather = "sol";
 
-switch (weather) {
-    case "regn":
-        console.log("Ta med ett paraply");
-        break;
+// const weather = "sol";
 
-    case "sol":
-        console.log("Ta på dig solglasögon");
-        break;
+// switch (weather) {
+//     case "regn":
+//         console.log("Ta med ett paraply");
+//         break;
 
-    case "snö":
-        console.log("Ta på dig vinterjacka");
-        break;
-    default:
-    console.log("Kolla väderappen igen");
+//     case "sol":
+//         console.log("Ta på dig solglasögon");
+//         break;
+
+//     case "snö":
+//         console.log("Ta på dig vinterjacka");
+//         break;
+//     default:
+//     console.log("Kolla väderappen igen");
+// }
+
+// for (let i = 1; i <= 4; i++){
+//     console.log("Varv " + i)
+// }
+
+// let varv = 10;
+
+// while (varv > 0) {
+//     console.log("Du har sprungit " + varv + " varv");
+
+//     varv--;
+// }
+
+// console.log("Du har sprungit klart!");
+
+
+// for (let j = 1; j <= 4; j++){
+//     console.log("Du har så här mycket energi kvar: " + j);
+// }
+
+// console.log("Du har slut på energi");
+
+// const cart = ["Mjölk", "Godis", "Bröd", "Godis", "Äpple"];
+
+// for (let i = 0; i < cart.length; i++) {
+//     if (cart[i] === "Godis"){
+//         console.log("Varning onödig produkt!");
+//     } else {
+//         console.log("Köp: " + cart[i]);
+//     }
+// }
+
+
+// function halsa (namn) {
+//     return "hej ${namn}"
+// }
+
+const halsa = (name, age, job) => {
+    console.log("Hej " + name + " " + age + " " + job);
 }
 
-for (let i = 1; i <= 4; i++){
-    console.log("Varv " + i)
-}
-
-let varv = 10;
-
-while (varv > 0) {
-    console.log("Du har sprungit " + varv);
-
-    varv--;
-}
-
-console.log("Du har sprungit klart!");
+halsa("Viktor", 29, "minecraft");
 
