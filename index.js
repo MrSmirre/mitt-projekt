@@ -306,20 +306,204 @@
 
 
 // En array med objekt (kundvagn)
-const varukorg = [
-  { namn: "Bok", pris: 120 },
-  { namn: "Penna", pris: 25 },
-  { namn: "Mapp", pris: 45 }
-];
+// const varukorg = [
+//   { namn: "Bok", pris: 120 },
+//   { namn: "Penna", pris: 25 },
+//   { namn: "Mapp", pris: 45 }
+// ];
 
-// Arrow function som tar emot en array
-const beraknaTotal = (produkter) => {
-  let summa = 0;
-  for (const p of produkter) {
-    summa += p.pris; // Lägger till priset
-  }
-  return summa;
-};
+// // Arrow function som tar emot en array
+// const beraknaTotal = (produkter) => {
+//   let summa = 0;
+//   for (const p of produkter) {
+//     summa += p.pris; // Lägger till priset
+//   }
+//   return summa;
+// };
 
-const totalt = beraknaTotal(varukorg);
-console.log(`Att betala: ${totalt} kr`); // "Att betala: 190 kr"
+// const totalt = beraknaTotal(varukorg);
+// console.log(`Att betala: ${totalt} kr`); // "Att betala: 190 kr"
+
+
+
+// const valkommen = (namn, titel = "Medlem") => {
+//   return `Välkommen ${titel} ${namn}!`
+// } 
+
+
+// console.log(valkommen("Viktor"))
+// console.log(valkommen("klara", "admin"))
+
+
+
+// const addi = (siffraEtt, siffraTva) => {
+//   return siffraEtt * siffraTva
+// }
+
+// console.log(addi(2, 30000))
+
+
+// const weather = (season) => {
+//   switch (season) {
+//     case "Sol":
+//       return "Ta på dig solglasögon"
+//     case "Snö":
+//       return "Ta på dig vinterjacka"
+//     case "Blåsigt":
+//       return "Ta på dig vindjacka"
+      
+//     default:
+//       return "Kolla väderappen igen"
+//   }
+// }
+
+// console.log(weather("Snö"));
+
+
+// const provPoang = [18, 22, 15, 28, 20];
+
+// const rakenaMedel = (poang) => {
+//   let summa = 0;
+//   for (let p of poang) {
+//     summa += p;
+//   }
+//   return summa / poang.length;
+// };
+
+// const medel  = rakenaMedel(provPoang);
+// console.log(`Medelpoäng på provet: ${medel}`);
+
+// const kunder = [
+//   { namn: "Mia", arVip: true, kopSumma: 1200 },
+//   { namn: "Sam", arVip: false, kopSumma: 450 },
+//   { namn: "Robin", arVip: true, kopSumma: 800 }
+// ];
+
+// const getVipBonus = ()
+
+
+// const checkScore = (a) => {
+//   if (a <= 50) {
+//     return "Underkänd";
+//   } else {
+//     return "Godkänd";
+//   }
+// }
+// console.log(checkScore(70));
+
+// const checkKcore = (points) => {
+//   if (points >= 50) {
+//     return "Godkänd";
+//   } else {
+//     return "Underkänd";
+//   }
+// };
+
+// console.log(checkScore(70));
+
+
+// const checkScore = (a) => {
+//   if (a <= 50) {
+//     return "Underkänd";
+//   } else {
+//     return "Godkänd";
+//   }
+// }
+// console.log(checkScore(2));
+// console.log(checkScore(222));
+
+
+// const words = "Välkommen"
+
+// let emptyArray = []
+
+// const count = (string) => {
+//   for (i of string) {
+//     emptyArray.push(i);
+//   }
+//   return emptyArray;
+// }
+
+// console.log(count(words))
+
+
+// const arr = ["Joel", "Daniel", "Philip", "Kristoffer", "Wictor", "Viktor", "Philip"]
+
+// const pedoFinder = (names) =>{
+//   for (i of names) {
+//     if (i === "Philip"){
+//       console.log(i + " " + "Hittade pedo")
+//     } else {
+//       console.log(i + " " + "Inget konstigt här")
+//     }
+//   }
+// }
+
+// pedoFinder(arr)
+
+
+//en arrow funktion som skriver ut underkänd om poängen är under 60
+
+// const prov = (poang) => {
+//   if (poang < 60) {
+//     return "Underkänd"
+//   } else {
+//     return "Godkänd"
+//   }
+// }
+
+// console.log(prov(60))
+
+// const elever = [ 
+//   {namn: "Daniel", point: 0}, 
+//   {namn: "Johan", point: 4}, 
+//   {namn: "Alex", point: 8},
+//   {namn: "Kornelia", point: 5}
+// ]
+
+// const prov = (poang) => {
+//   const resultat = []
+//   for (let i of poang) {
+//     if (poang >= 60) {
+//       resultat.push(`${i.namn}: Godkänd`)
+//     } else {
+//       resultat.push(`${i.namn}: Underkänd`)
+//     }
+//   }
+//   return resultat
+// }
+
+// console.log(prov(elever))
+
+
+// const list = ["Mjölk", "vetemjöl", "Ägg", "Kebabrulle"]
+
+// const cart = (items) => {
+//   for (let i = 0; i < items.length; i++) {
+//     if (items[i] === "Kebabrulle" || items[i] === "Ägg") {
+//       console.log(`${items[i]}: Onödig vara`)
+//     } else {
+//       console.log(`${items[i]}: Köp förfan`)
+//     }
+//   }
+// }
+
+// cart(list)
+
+
+
+
+for (let i = 1; i <= 3; i++) {
+  console.log(i);
+}
+
+
+
+
+
+
+
+
+
+
+
