@@ -493,17 +493,116 @@
 
 
 
-for (let i = 1; i <= 3; i++) {
-  console.log(i);
-}
+// for (let i = 1; i <= 20; i++) {
+//   console.log(i);
+// }
 
 
 
 
+// const welcome = (name = "Daniel", title = "Medlem") => {
+//   return `Välkommen ${title} ${name}`
+// }
+
+// console.log(welcome("Klara", "Admin"))
+// console.log(welcome("Leo"))
+// console.log(welcome())
 
 
 
+// const provPoang = [18, 22, 15, 28, 20]
+
+// const rakenaMedel = (provPoangArr) => {
+//   let sum = 0
+//   for (const poang of provPoangArr) {
+//     sum += poang 
+//   }
+//   return sum / provPoangArr.length
+// }
+
+// console.log("Medelpoäng på provet: ", rakenaMedel(provPoang))
 
 
 
+// const kunder = [
+//   { namn: "Mia", Vip: true, kopSumma: 1200 },
+//   { namn: "Sam", Vip: false, kopSumma: 450 },
+//   { namn: "Robin", Vip: true, kopSumma: 800 }
+// ];
 
+
+// const getVipBonus = (kundArr) => {
+//   const resultat = []
+
+//   for (const kund of kundArr) {
+   
+//     if (kund.Vip === true) {
+//       const rabatt = kund.kopSumma * 0.9
+//       const vipKund = {namn: kund.namn, kopSumma: rabatt}
+//       resultat.push(vipKund)
+//     }
+//   }
+//   return resultat
+// }
+
+// console.log(getVipBonus(kunder))
+
+// const skrivUtTio = () => {
+// return 10
+// }
+
+// const minFunktion = (callBackFn) => {
+//   const result = callBackFn()
+
+//   return result
+// }
+
+// const skrivUtResult = minFunktion(skrivUtTio)
+
+// console.log(skrivUtResult)
+
+
+
+// const firstName = "Viktor"
+
+// const age = 28
+
+// const isStudent = true
+
+// console.log(firstName + " " + age + " Är grabben student? = " + isStudent)
+
+
+// const favoriteFoods = ["Köttbullar", "Glas", "Blåbär"]
+
+// console.log(favoriteFoods[0]);
+
+// favoriteFoods.push("Lingon")
+
+// console.log(favoriteFoods[3]);
+
+// console.log(favoriteFoods.length);
+
+
+// const car = { brand: "Toyota", year: 2023}
+
+// console.log(car.brand);
+
+// car.year = 2026
+
+// console.log(car.year + " " + car.brand);
+
+
+
+const siffror = [18, 2, 5, 28, 0]
+
+
+
+const over10 = siffror.filter((siffra, i) => {
+  console.log(i + " - " + siffra);
+  return siffra < 10
+})
+
+console.log(over10);
+
+
+console.log(siffror);
