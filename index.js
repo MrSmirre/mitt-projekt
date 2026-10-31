@@ -593,16 +593,191 @@
 
 
 
-const siffror = [18, 2, 5, 28, 0]
+// const siffror = [18, 2, 5, 28, 0]
 
 
 
-const over10 = siffror.filter((siffra, i) => {
-  console.log(i + " - " + siffra);
-  return siffra < 10
-})
+// const over10 = siffror.filter((siffra, i) => {
+//   console.log(i + " - " + siffra);
+//   return siffra < 10
+// })
 
-console.log(over10);
+// console.log(over10);
 
 
-console.log(siffror);
+// console.log(siffror);
+
+
+
+
+
+// const versaler = (str) => str.toUpperCase();
+
+// const citera = (str) => `"${str}"`;
+
+// const formateraText = (text, callback) => {
+//   return callback(text)
+// }
+
+// console.log(formateraText("Hej", versaler));
+// console.log(formateraText("hej", citera));
+
+
+
+// const tal = [4, 15, 8, 25, 2];
+
+// const over10 = tal.filter((numb) => numb > 10)
+
+// const plus5 = over10.map((numb) => numb + 5)
+
+// console.log(over10)
+// console.log(plus5)
+
+
+// const tal = [4, 15, 8, 25, 2];
+
+// const filtrera = (filtreras, arr) => {
+//   const result = [] 
+//   for ( const i of arr) {
+//     if (filtreras(i)) result.push(i)  
+//   }
+//   return result
+// }
+
+// console.log(filtrera((numb) => numb > 10,tal))
+
+
+// const firstName = "Viktor"
+// const age = 29
+// const isStudent = true
+
+// console.log("Hej mitt namn är " + ", jag är " + age + " och är student = " + isStudent);
+
+
+// const favoriteFoods = ["Kåldolmar", "Köttbullar", "Ett stekt ägg"]
+
+// console.log(favoriteFoods[0]);
+
+// favoriteFoods.push("Hallonsylt")
+
+// console.log(favoriteFoods.length + " " + favoriteFoods[3]);
+
+
+
+// const car = { brand: "Volvo", model: "740", year: 1994 }
+
+// console.log(car.brand);
+
+// console.log(car);
+
+// car.year = 2024
+
+// console.log(car);
+
+// const weather = "Sol"
+
+
+// switch (weather) {
+//   case "Snö":
+//     console.log("Ta på dig jacka");
+//     break;
+//   case "Regn":
+//     console.log("Ta på dig regnjacka");
+//     break;
+//   case "Sol": 
+//     console.log("Ta på dig solglasögon lil bro");
+//     break;
+//     default:
+//       console.log("Kolla väderappen igen")  
+// }
+
+
+
+
+// const season = ["Januari", "Februari", "Mars", "April", "Maj", "Juni", "Juli", "Augusti", "September", "Oktober", "November", "December"]
+
+// switch (season) {
+//   case "Vinter":
+//     console.log("Skotta snö");
+//     break;
+//   case "Sommar":
+//     console.log("Klipp gräset");
+//     break;
+//   case "Vår":
+//     console.log("Vårstäda huset och spela frisbeegolf");
+//     break;
+//   case "Höst":
+//     console.log("Kratta löv");
+//     break;      
+//   default:
+//     console.log("Gå ut o kolla vad det är för årstid");
+    
+// }
+
+
+// for (let i = 5; i >= 1; i--) {
+//   if (i === 3) {
+//     console.log("Halvvägs kvar! " + i)
+//   } else {
+//     console.log("Sekunder kvar: " + i)
+//   }
+// }
+// console.log("LIFTOFF!")
+
+
+// const cart = ["Mjölk", "Godis", "Bröd", "Godis", "Äpple"]
+
+// for (item of cart) {
+//   if (item === "Godis") {
+//     console.log("Onödig vara, köp inte")
+//   } else {
+//     console.log("Köp: " + item)
+//   }
+// }
+
+
+
+// const valkommen = (namn, titel = "Medlem") => {
+//   return `Välkommen ${namn} ${titel}`
+// } 
+
+// console.log(valkommen("klara", "Admin"));
+// console.log(valkommen("Leo"));
+
+
+
+// const provPoang = [18, 22, 15, 28, 20]
+
+// const rakenaMedel = (arr) => {
+//   let summa = 0
+//   for (const poang of arr) {
+//    summa += poang
+//   }
+//   return summa / arr.length
+// }
+
+// console.log("Medelpoäng på provet: ", (rakenaMedel(provPoang)))
+
+
+const kunder = [
+  { namn: "Mia", arVip: true, kopSumma: 1200},
+  { namn: "Sam", arVip: false, kopSumma: 450},
+  { namn: "Robin", arVip: true, kopSumma: 800}
+]
+
+const getVipBonus = (arr) => {
+  const resultat = []
+
+  for (const i of arr) {
+    if (i.arVip) {
+      const rabatt = i.kopSumma * 0.9
+      resultat.push({ namn: i.namn, nyttPris: rabatt })
+  }
+
+}
+ return resultat
+}
+
+const vipRabatter = getVipBonus(kunder)
+
+console.log(vipRabatter)
