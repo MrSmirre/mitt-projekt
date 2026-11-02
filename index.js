@@ -943,11 +943,59 @@ const poang = [8, 15, 22, 12, 45, 65, 87];
 
 // console.log(godkanda);
 
-const uppdaterade = poang.map(p => p * 2)
-console.log(uppdaterade);
+// const uppdaterade = poang.map(p => p * 2)
+// console.log(uppdaterade);
 
 
-poang.forEach(p => console.log(p))
+// poang.forEach(p => console.log(p))
+
+// const stader = ["Stockholm", "Göteborg", "Malmö"]
+
+// console.log(stader);
+
+// stader.push("Uppsala")
+
+// console.log(stader);
+
+// const tvaStader = stader.slice(0, 2)
+
+// console.log(tvaStader);
+
+// const temp = [12, 18, 25, 8, 30, 15]
+
+// console.log(temp);
+
+// const over15 = temp.filter(p => p > 15)
+
+// console.log(over15)
+
+// const dubbel = over15.map(p => p * 2)
+
+// console.log(dubbel);
+
+
+// const temp = [12, 18, 25, 8, 30, 15]
+
+// temp.push(16)
+
+// console.log(temp);
+
+// temp.pop()
+
+// temp.pop()
+
+// console.log(temp);
+
+// temp.splice(1, 2)
+
+// console.log(temp);
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+// // At position 2, add "Lemon" and "Kiwi":
+// fruits.splice(2, 0, "Lemon", "Kiwi");
+
+// console.log(fruits);
 
 
 
