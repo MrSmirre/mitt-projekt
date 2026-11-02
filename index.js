@@ -997,5 +997,70 @@ const poang = [8, 15, 22, 12, 45, 65, 87];
 
 // console.log(fruits);
 
+// const weather = "Sol"
+
+// switch (weather){
+//     case "Snö":
+//         console.log("Ta på dig vinterjacka")
+//         break;
+//     case "Sol":
+//         console.log("Ta på dig solglasögon")
+//         break;
+//     default:
+//         console.log("Kolla vädret igen")
+            
+// }
+
+
+// for (i = 5; i >= 1; i--) {
+//     if (i === 3){
+//         console.log("Halvvägs där! " + i);
+//     } else { 
+//         console.log("Sekunder kvar: " + i) 
+//     }
+// }
+// console.log("LIFTOFF!");
+
+
+// const valkommen = (namn, titel = "Medlem") => {
+//     return `Välkommen ${namn} ${titel}`
+// }
+
+// console.log(valkommen("Viktor", "Admin"))
+// console.log(valkommen("Leo"));
+
+// const provPoang = [18, 22, 15, 28, 20]
+
+// const rakenaMedel = (provPoangArr) => {
+//     let summa = 0
+//     for (const p of provPoangArr) {
+//         summa += p
+//     }
+//     return summa / provPoangArr.length
+// }
+
+// const medel = rakenaMedel(provPoang)
+
+// console.log(medel)
+
+// const kunder = [
+//   { namn: "Mia", arVip: true, kopSumma: 1200 },
+//   { namn: "Sam", arVip: false, kopSumma: 450 },
+//   { namn: "Robin", arVip: true, kopSumma: 800 }
+// ];
+
+
+// const getVipBonus = (kundArr) => {
+//     const resultat = []
+//     for (const p of kundArr) {
+//         if (p.arVip){
+//             const nyPris = p.kopSumma * 0.9
+//             resultat.push({ namn: p.namn, nyPris})
+//         }
+//     }
+//     return resultat
+// }
+
+// console.log(getVipBonus(kunder))
 
 
