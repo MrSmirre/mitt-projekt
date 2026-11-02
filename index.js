@@ -759,25 +759,195 @@
 // console.log("Medelpoäng på provet: ", (rakenaMedel(provPoang)))
 
 
-const kunder = [
-  { namn: "Mia", arVip: true, kopSumma: 1200},
-  { namn: "Sam", arVip: false, kopSumma: 450},
-  { namn: "Robin", arVip: true, kopSumma: 800}
-]
+// const kunder = [
+//   { namn: "Mia", arVip: true, kopSumma: 1200},
+//   { namn: "Sam", arVip: false, kopSumma: 450},
+//   { namn: "Robin", arVip: true, kopSumma: 800}
+// ]
 
-const getVipBonus = (arr) => {
-  const resultat = []
+// const getVipBonus = (arr) => {
+//   const resultat = []
 
-  for (const i of arr) {
-    if (i.arVip) {
-      const rabatt = i.kopSumma * 0.9
-      resultat.push({ namn: i.namn, nyttPris: rabatt })
-  }
+//   for (const i of arr) {
+//     if (i.arVip) {
+//       const rabatt = i.kopSumma * 0.9
+//       resultat.push({ namn: i.namn, nyttPris: rabatt })
+//   }
 
-}
- return resultat
-}
+// }
+//  return resultat
+// }
 
-const vipRabatter = getVipBonus(kunder)
+// const vipRabatter = getVipBonus(kunder)
 
-console.log(vipRabatter)
+// console.log(vipRabatter)
+
+
+// const firstName = "Viktor"
+// const age = 29
+// const isStudent = true
+
+// console.log("Hej mitt namn är " + firstName + " och är " + age + " år gammal " + " är jag student? " + isStudent);
+
+
+// const favoriteFoods = ["Kebab", "Köttbulle", "Köttfärs"]
+
+// console.log(favoriteFoods[0])
+
+// favoriteFoods.push("Bröd")
+
+// console.log(favoriteFoods.length);
+// console.log(favoriteFoods);
+
+// const foodList = (arr) => {
+// for (i of arr) {
+//   console.log(i)
+// }
+// }
+
+// foodList(favoriteFoods)
+
+
+// const car = {brand: "Volvo", model: "v70", year: 2014}
+
+// console.log(car.brand);
+
+// console.log(car.year);
+
+// car.year = 2024
+
+// console.log(car.year);
+
+
+// const weather = "Snö"
+
+// switch (weather) {
+//   case "Regn":
+//     console.log("Ta på dig regnjacka");
+//     break;
+//   case "Snö":
+//     console.log("Ta på dig vinterjacka");
+//     break;
+//   case "Blåsigt":
+//     console.log("Ta på dig vindjacka");
+//     break;
+//   default:
+//     console.log("Kolla väderappen igen");
+// }
+
+
+// let energi = 5;
+
+// while (energi > 0) {
+//   console.log("Sprang ett varv! Energi kvar! " + energi)
+//   energi--
+// }
+
+// console.log("Slut på energi!")
+
+// for (i = 5; i >= 1; i--) {
+//   if (i === 3) {
+//     console.log("Halvvägs kvar! " + i);
+//   } else {
+//       console.log("Sekunder kvar: " + i);
+//   }
+// }
+
+// console.log("Liftoff!");
+
+// const cart = ["Mjök", "Godis", "Bröd", "Godis", "Äpple"]
+
+// for (item of cart) {
+//   if (item === "Godis") {
+//     console.log("Onödig vara, köp inte!");
+//   } else {
+//     console.log("Köp: " + item);
+    
+//   }
+// }
+
+// const valkommen = (namn, titel = "Medlem") => {
+//   return `Välkommen ${titel} ${namn}`
+// }
+
+// console.log(valkommen("Klara", "Admin"))
+// console.log(valkommen("Leo"))
+
+// const siffror = [18, 22, 15, 28, 20]
+
+// const rakenaMedel = (arr) => {
+//   let summa = 0
+//   for (numb of arr) {
+//     summa += numb
+//   }
+//   return summa / arr.length
+// }
+
+// console.log("Medelpoäng på provet: ", rakenaMedel(siffror));
+
+
+// const kunder = [
+//   { namn: "Mia", arVip: true, kopSumma: 1200 },
+//   { namn: "Sam", arVip: false, kopSumma: 450 },
+//   { namn: "Robin", arVip: true, kopSumma: 800 }
+// ];
+
+// const getVipBonus = (kundLista) => {
+//   const resultat = []
+//     for (const kunder of kundLista) {
+//       if (kunder.arVip) {
+//         const rabatt = kunder.kopSumma * 0.9
+//         resultat.push({namn: kunder.namn, nyttPris: rabatt})
+//       }
+//     }
+//     return resultat
+// }
+
+// console.log(getVipBonus(kunder))
+
+
+// const tal = [10, 20, 30, 40];
+
+// // push & pop (Muterar)
+// tal.push(50); // [10, 20, 30, 40, 50]
+// console.log(tal);
+// tal.pop(); // [10, 20, 30, 40]
+// console.log(tal);
+
+
+// // slice (Icke-muterande)
+// const del = tal.slice(1, 3); // ➔ [20, 30]
+// console.log(del);
+
+// splice (Muterar: starta vid index 1, ta bort 2)
+// tal.splice(1, 2); // tal är nu [10, 40]
+// console.log(tal);
+
+
+const poang = [8, 15, 22, 12, 45, 65, 87];
+
+// 1. forEach: Skriv ut varje tal
+// poang.forEach(p => console.log(p));
+
+// // 2. map: Plussa på 2 poäng på alla
+// const uppdaterade = poang.map(p => p + 2);
+// // ➔ [10, 17, 24, 14]
+// console.log(uppdaterade);
+
+
+// // 3. filter: Behåll endast poäng >= 15
+// const godkanda = poang.filter(p => p >= 15);
+// // ➔ [15, 22]
+
+// const godkanda = poang.filter(p => p <= 15)
+
+// console.log(godkanda);
+
+const uppdaterade = poang.map(p => p * 2)
+console.log(uppdaterade);
+
+
+poang.forEach(p => console.log(p))
+
+
+
