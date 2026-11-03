@@ -1,10 +1,10 @@
 //mock-data
 const products = [
-    { name: "Hörlurar", category: "Elektronik", price: 1000, icon: '🎧'},
+    { name: "Hörlurar", category: "elektronik", price: 1000, icon: '🎧'},
     { name: "Hoodie", category: "kläder", price: 500, icon: '👕'},
-    { name: "Tangentbord", category: "Elektronik", price: 1500, icon: '⌨️'},
-    { name: "Keps", category: "Kläder", price: 200, icon: '🧢'},
-    { name: "Gamingmus", category: "Elektronik", price: 600, icon: '🖱️'},
+    { name: "Tangentbord", category: "elektronik", price: 1500, icon: '⌨️'},
+    { name: "Keps", category: "kläder", price: 200, icon: '🧢'},
+    { name: "Gamingmus", category: "elektronik", price: 600, icon: '🖱️'},
 ]
 
 
@@ -28,14 +28,15 @@ const updateList = () => {
     } else if (sortSelect.value === "high-low") {
         result.sort((a, b ) => b.price - a.price)
     }
-
+    console.log(categorySelect.value);
+    
     render(result)
 }
 
 const render = result => {
     productsContainer.innerHTML = ""
 
-    products.forEach(product => {
+    result.forEach(product => {
         const card = document.createElement("div")
         card.className = "product-card"
         card.innerHTML = `
@@ -53,3 +54,5 @@ categorySelect.addEventListener("change", updateList)
 sortSelect.addEventListener("change", updateList)
 
 updateList()
+
+
