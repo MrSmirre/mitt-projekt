@@ -1,0 +1,54 @@
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.calculator-body {
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    padding: 1rem;
+    border: 3px solid #111111;
+    border-radius: 16px;
+}
+
+.number-container {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 5px;
+}
+
+.btns-container{
+    display: flex;
+    gap: 5px;
+}
+
+.plus-minus-times{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.divide{
+    margin-top: 5px;
+    padding-right: 40px;
+}
+
+button{
+    font-size: xxx-large;
+    padding: 20px;
+    border: 3px solid #bbbbbb;
+    cursor: pointer;
+}
+
+button:active{
+    
+}
+
+input {
+    border: 2px solid #bbbbbb;
+    font-size: xxx-large;
+    width: 20rem;
+}
