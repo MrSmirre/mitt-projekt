@@ -924,7 +924,7 @@
 // console.log(tal);
 
 
-const poang = [8, 15, 22, 12, 45, 65, 87];
+// const poang = [8, 15, 22, 12, 45, 65, 87];
 
 // 1. forEach: Skriv ut varje tal
 // poang.forEach(p => console.log(p));
@@ -1062,5 +1062,97 @@ const poang = [8, 15, 22, 12, 45, 65, 87];
 // }
 
 // console.log(getVipBonus(kunder))
+
+
+const car = {brand: "volvo", model: "v70", age: 1998}
+console.log(car.brand)
+car.year = 2005
+
+console.log(car.year);
+
+const firstName = "Viktor"
+const age = 29
+const isStudent = true
+
+console.log("Hej " + firstName + " " + age + " år är du student? " + isStudent);
+
+const fruits = ["Köttbulle", "RIlle", "Wictor"]
+fruits.push("JOel")
+
+console.log(fruits.length);
+
+const weather = "Rgn"
+
+switch (weather) {
+    case "Regn": 
+    console.log("Ta på dig regnjacka");
+    break;
+    default:
+    console.log("Kolla vädret igen");
+    
+}
+
+for (let i = 5; i >= 1; i--) {
+    if (i === 3){
+        console.log("Halvvägs där" + i);
+    } else {
+        console.log(i);
+        
+    }
+}
+console.log("Liftoff!!!");
+
+const cart = ["Mjök", "Godis", "Köttabulle", "Godis", "Bannizz", "Godis"]
+
+for (item of cart) {
+    if (item === "Godis"){
+        console.log("Varning, onödig vara!");        
+    } else if (item === "Bannizz") {
+        console.log("spring förfan") 
+    } else {
+        console.log("Köp förfan: " + item);
+    }
+}
+
+const valkommen = (namn, titel = "Medlem") => {
+    return `Välkommen ${titel} ${namn}`
+}
+
+console.log(valkommen("Viktor", "Admin"));
+console.log(valkommen("Rille"));
+
+const provPoang = [18, 22, 15, 28, 20]
+
+const rakenaMedel = (arr) => {
+    let summa = 0
+
+    for (p of arr) {
+        summa += p
+    }
+    return summa / arr.length
+}
+
+console.log("Medelpoäng på provet: ", rakenaMedel(provPoang));
+
+
+const kunder = [
+  { namn: "Mia", arVip: true, kopSumma: 1200 },
+  { namn: "Sam", arVip: false, kopSumma: 450 },
+  { namn: "Robin", arVip: true, kopSumma: 800 }
+];
+
+const getVipBonus = (kundArr) => {
+    let result = []
+
+    for (const k of kundArr) {
+        if (k.arVip){
+           const nyttPris = k.kopSumma * 0.9
+            result.push({ namn: k.namn, arVip: true, nyttPris });
+        }
+    }
+    return result
+}
+
+console.log(getVipBonus(kunder))
 
 
