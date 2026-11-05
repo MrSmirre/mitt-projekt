@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produktsida</title>
+    <link rel="stylesheet" href="index.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="controls">
+            <!-- filtrera kategori -->
+            <div class="control-iteam">
+                <label>Category</label>
+                <select id="filter-category">
+                    <option value="alla">alla</option>
+                    <option value="elektronik">elektronik</option>
+                    <option value="kläder">kläder</option>
+                </select>
+            </div> 
+            <!-- sortera pris -->
+            <div class="control-iteam">
+                <label>sortera</label>
+                <select id="sort-price">
+                    <option value="standard">Standard</option>
+                    <option value="low-high">Low-high</option>
+                    <option value="high-low">High-low</option>
+                </select>
+            </div> 
+              <!-- rabettera pris -->
+            <div class="control-iteam"></div> 
+            <label>REA</label>
+            <button id="btn-discount">Ge 20% rabatt</button>
+        </div>
+
+        <!-- products comes in via JS -->
+        <div id="product-container" class="product-container"></div>
+    </div>
+
+</body>
+</html>

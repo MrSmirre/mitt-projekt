@@ -1155,4 +1155,127 @@
 
 // console.log(getVipBonus(kunder))
 
+// const weather = "Ren"
+
+// switch (weather) {
+//     case "Regn":
+//     console.log("Ta på dig regnkläder");
+//     break;
+//     default:
+//         console.log("Kolla väderappen igen");
+        
+// }
+
+
+// const cart = ["Mjölk", "Godis", "Bröd", "Godis", "Äpple"];
+
+// for (i of cart) {
+//     if (i === "Godis") {
+//         console.log("Onödig vara");
+        
+//     } else {
+//         console.log("Köp: " + i);
+        
+//     }
+// }
+
+
+// for (i = 5; i >= 1; --i) {
+//     if (i === 3) {
+//         console.log("Halvvägs där " + i);
+//     } else { 
+//         console.log("Sekunder kvar " + i);
+//     }
+// }
+// console.log("LIFTOFF");
+
+
+// const valkommen = (namn, titel = "Gäst") => {
+//     return `Välkommen ${titel} ${namn}`
+// }
+
+// console.log(valkommen("Viktor", "Admin"));
+// console.log(valkommen("Leo"));
+
+
+// const provPoang = [18, 22, 15, 28, 20];
+
+// const rakenaMedel = (arr) => {
+//     let sum = 0
+    
+//     for (p of arr) {
+//         sum += p
+//     }
+//     return sum / arr.length
+// }
+
+// console.log(rakenaMedel(provPoang));
+
+
+// const kunder = [
+//   { namn: "Mia", arVip: true, kopSumma: 1200 },
+//   { namn: "Sam", arVip: false, kopSumma: 450 },
+//   { namn: "Robin", arVip: true, kopSumma: 800 }
+// ];
+
+// const getVipBonus = (kundArr) => {
+//     const result = []
+
+//     for(const k of kundArr) {
+//     if (k.arVip) {
+//         const nySumma = k.kopSumma * 0.9
+//         result.push({namn: k.namn, nySumma})
+//     }
+// }
+//     return result
+// }
+
+// const vipRabatter = getVipBonus(kunder)
+// console.log(vipRabatter);
+
+
+// const versaler = (str) => str.toUpperCase()
+// const citera = (str) => `"${str}"`
+
+// const formateraText = (text, callback) => callback(text)
+
+// console.log(formateraText("viktor", citera));
+// console.log(formateraText("viktor", versaler));
+
+// const versaler = (str) => str.toUpperCase()
+// const citera = (str) => `"${str}"`
+
+// const formateraText= (text, callback) => callback(text)
+
+// console.log(formateraText("Viktor", versaler));
+// console.log(formateraText("Viktor", citera));
+
+// const tal = [4, 15, 8, 25, 2];
+
+// const arr = tal.filter(n => n > 10)
+
+// console.log(arr);
+
+// const plus5 = arr.map(n => n += 5)
+
+// console.log(plus5);
+
+
+// const stader = ["Stockholm", "Göteborg", "Malmö"];
+
+// stader.push("Uppsala")
+
+// const tvaStader = stader.slice(0, 2)
+
+// console.log(stader);
+// console.log(tvaStader);
+
+// const temp = [12, 18, 25, 8, 30, 15];
+
+// const over15 = temp.filter(t => t > 15)
+
+// const dubblera = over15.map(t => t * 2)
+
+// console.log(over15);
+// console.log(dubblera);
 
