@@ -1279,3 +1279,29 @@
 // console.log(over15);
 // console.log(dubblera);
 
+// const cities = ["stockholm", "Göteborg", "Malmö"]
+
+// cities.push("Uppsala")
+
+// const tvaStader = cities.slice(0, 2)
+
+// console.log(cities);
+
+// console.log(tvaStader);
+
+// const temp = [12, 18, 25, 8, 30, 15]
+
+// const over15 = temp.filter((t) => t > 15)
+ 
+// console.log(over15);
+ 
+// const dubblerade = over15.map((t) => t * 2)
+
+// console.log(dubblerade);
+
+// console.log(temp);
+
+
+
+
+

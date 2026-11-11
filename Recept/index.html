@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Rubrik -->
+        <header>
+            <h1>🍳 Smart Recept & Kökshjälpare</h1>
+        </header>
+
+        <!-- kontroller -->
+        <div class="controls">
+            <div class="control-box">
+                <h3>Filtrera Kategori</h3>
+                <p>Visa endast viss mat</p>
+                <select name="" id="filtrera-category">
+                    <option value="alla">Alla recept</option>
+                    <option value="vegetariskt">Vegetariskt</option>
+                    <option value="kött">Kött</option>
+                    <option value="fisk">Fisk</option>
+                </select>
+            </div>
+            <div class="control-box">
+                <h3>Portionsräknare</h3>
+                <p>Ändra antal personer (påverkar pris)</p>
+
+                <div class="portion-control">
+                    <button id="btn-minus" class="portions-btn">-</button>
+                    <span id="portions-count" class="portions-count">2</span> st
+                    <button id="btn-plus" class="portions-btn">+</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- huvudlayout -->
+        <div class="main-layout">
+            <div class="recipe-section">
+                <h2>
+                    <span>Mina recept</span>
+                    <span id="recipe-count" class="recipe-count-badge">0 st</span>
+                </h2>
+
+                 <!-- här kommer recept in via js -->
+            <div class="recipe-container"></div>
+
+                <!-- formulär för att lägga till -->
+                <div class="form-section">
+                    <h2>Lägg till recept</h2>
+                    <div id="form-card">
+                        <form id="add-recipe-form"></form>
+                        <label for="">Receptnamn</label>
+                        <input type="text" id="input-name" required placeholder="t.ex">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Katergori</label>
+                        <select name="" id="">
+                            <option value="vegetariskt">Vegetariskt</option>
+                            <option value="kött">Kött</option>
+                            <option value="fisk">Fisk</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
