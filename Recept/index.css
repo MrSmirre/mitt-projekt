@@ -1,0 +1,585 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fbf8f3;
+    color: #2d241e;
+    padding: 20px 10px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: #5c3a21;
+    margin-bottom: 6px;
+}
+
+header p {
+    color: #7a6b61;
+    font-size: 0.9rem;
+}
+
+/* Kontrollpanel - Mobil först: staplade på varandra */
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.control-box {
+    background: white;
+    padding: 15px;
+    border: 1px solid #e6dcd0;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.control-box h3 {
+    font-size: 1rem;
+    color: #4a3b32;
+    margin-bottom: 4px;
+}
+
+.control-box p {
+    font-size: 0.8rem;
+    color: #8c7a6b;
+    margin-bottom: 15px;
+}
+
+select, input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d4c5b9;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    background-color: #fff;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+select:focus, input:focus {
+    border-color: #c07848;
+}
+
+.btn {
+    background-color: #c07848;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 0.9rem;
+    text-align: center;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #a86237;
+}
+
+.portions-control {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.portions-btn {
+    background-color: #eae1d6;
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portions-btn:hover {
+    background-color: #d8ccbf;
+}
+
+/* Layout huvuddel - Mobil först: staplade på varandra */
+.main-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.recipes-section {
+    width: 100%;
+}
+
+.recipes-section h2 {
+    font-size: 1.2rem;
+    color: #5c3a21;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recipe-count-badge {
+    font-size: 0.75rem;
+    background-color: #ecdcd0;
+    color: #5c3a21;
+    padding: 3px 10px;
+    border-radius: 20px;
+}
+
+.recipe {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.recipe-card {
+    background: white;
+    border: 1px solid #e6dcd0;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    transition: transform 0.2s, box-shadow 0.2s;
+    flex: 1 1 100%; /* Tar full bredd som standard på mobil */
+}
+
+.recipe-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.recipe-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.recipe-icon {
+    font-size: 2.2rem;
+}
+
+.recipe-category-tag {
+    font-size: 0.7rem;
+    background-color: #f7ede2;
+    color: #a86237;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+.recipe-name {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #2d241e;
+    margin-bottom: 6px;
+}
+
+.recipe-ingredients {
+    font-size: 0.8rem;
+    color: #7a6b61;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.recipe-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #f2ece4;
+    padding-top: 12px;
+    margin-top: auto;
+}
+
+.recipe-price-label {
+    font-size: 0.7rem;
+    color: #a19388;
+    display: block;
+}
+
+.recipe-price-val {
+    font-weight: 700;
+    font-size: 1rem;
+    color: #5c3a21;
+}
+
+/* Formulär */
+.form-section {
+    min-width: 100%;
+}
+.form-section h2 {
+    margin-bottom: 15px;
+}
+
+.form-card {
+    background: white;
+    border: 1px solid #e6dcd0;
+    border-radius: 12px;
+    padding: 20px;
+    height: fit-content;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.form-card h2 {
+    font-size: 1.2rem;
+    color: #5c3a21;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 14px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #4a3b32;
+    margin-bottom: 5px;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fbf8f3;
+    color: #2d241e;
+    padding: 20px 10px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: #5c3a21;
+    margin-bottom: 6px;
+}
+
+header p {
+    color: #7a6b61;
+    font-size: 0.9rem;
+}
+
+/* Kontrollpanel - Mobil först: staplade på varandra */
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.control-box {
+    background: white;
+    padding: 15px;
+    border: 1px solid #e6dcd0;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.control-box h3 {
+    font-size: 1rem;
+    color: #4a3b32;
+    margin-bottom: 4px;
+}
+
+.control-box p {
+    font-size: 0.8rem;
+    color: #8c7a6b;
+    margin-bottom: 15px;
+}
+
+select, input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d4c5b9;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    background-color: #fff;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+select:focus, input:focus {
+    border-color: #c07848;
+}
+
+.btn {
+    background-color: #c07848;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 0.9rem;
+    text-align: center;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #a86237;
+}
+
+.portions-control {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.portions-btn {
+    background-color: #eae1d6;
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portions-btn:hover {
+    background-color: #d8ccbf;
+}
+
+/* Layout huvuddel - Mobil först: staplade på varandra */
+.main-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.recipes-section {
+    width: 100%;
+}
+
+.recipes-section h2 {
+    font-size: 1.2rem;
+    color: #5c3a21;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recipe-count-badge {
+    font-size: 0.75rem;
+    background-color: #ecdcd0;
+    color: #5c3a21;
+    padding: 3px 10px;
+    border-radius: 20px;
+}
+
+.recipe {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.recipe-card {
+    background: white;
+    border: 1px solid #e6dcd0;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    transition: transform 0.2s, box-shadow 0.2s;
+    flex: 1 1 100%; /* Tar full bredd som standard på mobil */
+}
+
+.recipe-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.recipe-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.recipe-icon {
+    font-size: 2.2rem;
+}
+
+.recipe-category-tag {
+    font-size: 0.7rem;
+    background-color: #f7ede2;
+    color: #a86237;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+.recipe-name {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #2d241e;
+    margin-bottom: 6px;
+}
+
+.recipe-ingredients {
+    font-size: 0.8rem;
+    color: #7a6b61;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.recipe-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #f2ece4;
+    padding-top: 12px;
+    margin-top: auto;
+}
+
+.recipe-price-label {
+    font-size: 0.7rem;
+    color: #a19388;
+    display: block;
+}
+
+.recipe-price-val {
+    font-weight: 700;
+    font-size: 1rem;
+    color: #5c3a21;
+}
+
+/* Formulär */
+.form-section {
+    min-width: 100%;
+}
+.form-section h2 {
+    margin-bottom: 15px;
+}
+
+.form-card {
+    background: white;
+    border: 1px solid #e6dcd0;
+    border-radius: 12px;
+    padding: 20px;
+    height: fit-content;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.form-card h2 {
+    font-size: 1.2rem;
+    color: #5c3a21;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 14px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #4a3b32;
+    margin-bottom: 5px;
+}
+
+
+
+/* ==========================================
+   MEDIA QUERIES (Större skärmar / Desktop)
+   ================================          */
+
+@media (min-width: 820px) {
+    body {
+        padding: 30px 15px;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    /* Ändra kontrollerna till att ligga bredvid varandra */
+    .controls {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .control-box {
+        flex: 1;
+        padding: 20px;
+    }
+
+    /* Ändra huvudlayouten till att recept och formulär ligger bredvid varandra */
+    .main-layout {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .recipe {
+        justify-content: space-between;
+    }
+
+    .recipes-section {
+        flex: 2;
+    }
+
+    /* Låt receptkorten följa din minmax-regel igen på större skärmar */
+    .recipe-card {
+        flex: 1 1 220px;
+        max-width: 330px;
+        min-height: 250px;
+    }
+
+    .form-section {
+        min-width: 290px;
+    }
+
+    .form-card {
+        flex: 1;
+        flex-direction: column;
+    }
+
+}
