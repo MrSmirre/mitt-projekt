@@ -1303,5 +1303,62 @@
 
 
 
+// const kund = {
+//     namn: "Erik",
+//     bestallningar: [
+//             {
+//             artiklar: [
+//                 { titel: "Skärm", pris: 3000},
+//                 { titel: "Mus", pris: 500}
+//             ]        
+//         }
+//     ]
+// }
+
+// const kundArtiklar = kund.bestallningar[0].artiklar
+
+// const priset = kundArtiklar[1].pris
+// console.log(priset);
+
+
+// let totalPrice = 0
+// kundArtiklar.forEach(artikel => {
+//     totalPrice += artikel.pris
+// })
+
+// console.log(totalPrice);
+
+
+const foretag = [
+    {
+        avdelningar: [
+            {
+                anstallda: [
+                    {namn: "Anna", roll: "Utvecklare"}
+                ]
+            }
+        ]
+    }
+]
+
+
+const anstalld = foretag[0].avdelningar[0].anstallda
+
+// console.log(anstalld[0].roll);
+
+
+
+const skrivUtAllaNamn = (anstalldaArray) => {
+    const anstalldaNamn = anstalldaArray.map(a => {
+        return a.namn
+    })
+
+    return anstalldaNamn
+}
+
+const skrivUtAllaNamnIgen = skrivUtAllaNamn(anstalld)
+
+
+console.log(skrivUtAllaNamnIgen);
 
 
