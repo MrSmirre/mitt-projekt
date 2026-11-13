@@ -1362,97 +1362,110 @@
 // console.log(skrivUtAllaNamnIgen);
 
 
-const soundifyApp = {
-  artister: [
-    {
-      namn: "Luna",
-      album: [
-        {
-          titel: "Midnight Sessions",
-          latar: [
-            { nr: 1, titel: "Night Walk", sekunder: 210 },
-            { nr: 2, titel: "Starlight", sekunder: 195 }
-          ]
-        }
-      ]
-    },
-    {
-      namn: "Daniel",
-      album: [
-        {
-          titel: "ETTERAYERGA",
-          latar: [
-            { nr: 1, titel: "yrtj", sekunder: 210 },
-            { nr: 2, titel: "grta", sekunder: 195 }
-          ]
-        }
-      ]
-    },
-    {
-      namn: "Philip",
-      album: [
-        {
-          titel: "gjhatdstzy",
-          latar: [
-            { nr: 1, titel: "Nrsdfffh", sekunder: 210 },
-            { nr: 2, titel: "Sgfho", sekunder: 195 }
-          ]
-        }
-      ]
-    }
-  ]
-};
+// const soundifyApp = {
+//   artister: [
+//     {
+//       namn: "Luna",
+//       album: [
+//         {
+//           titel: "Midnight Sessions",
+//           latar: [
+//             { nr: 1, titel: "Night Walk", sekunder: 210 },
+//             { nr: 2, titel: "Starlight", sekunder: 195 }
+//           ]
+//         }
+//       ]
+//     },
+//     {
+//       namn: "Daniel",
+//       album: [
+//         {
+//           titel: "ETTERAYERGA",
+//           latar: [
+//             { nr: 1, titel: "yrtj", sekunder: 210 },
+//             { nr: 2, titel: "grta", sekunder: 195 }
+//           ]
+//         }
+//       ]
+//     },
+//     {
+//       namn: "Philip",
+//       album: [
+//         {
+//           titel: "gjhatdstzy",
+//           latar: [
+//             { nr: 1, titel: "Nrsdfffh", sekunder: 210 },
+//             { nr: 2, titel: "Sgfho", sekunder: 195 }
+//           ]
+//         }
+//       ]
+//     }
+//   ]
+// };
 
-// Uppgift 1: Snabb-navigering
-// Hämta sekunder för "Starlight".
+// // Uppgift 1: Snabb-navigering
+// // Hämta sekunder för "Starlight".
 
-const seconds = soundifyApp.artister[0].album[0].latar[1].sekunder
+// const seconds = soundifyApp.artister[0].album[0].latar[1].sekunder
 
-console.log(seconds);
+// console.log(seconds);
 
-// Uppgift 2: Räkna Speltid
-// Skriv funktion som räknar ihop total speltid i sekunder.
+// // Uppgift 2: Räkna Speltid
+// // Skriv funktion som räknar ihop total speltid i sekunder.
 
-const latar = soundifyApp.artister[0].album[0].latar
+// const latar = soundifyApp.artister[0].album[0].latar
 
-const getSpeltid = ((latarArr) => {
-    let totalTime = 0
-    for (let i = 0; i < latarArr.length; i++) {
-        totalTime += latarArr[i].sekunder
-    }
-    return totalTime
-})
+// const getSpeltid = ((latarArr) => {
+//     let totalTime = 0
+//     for (let i = 0; i < latarArr.length; i++) {
+//         totalTime += latarArr[i].sekunder
+//     }
+//     return totalTime
+// })
 
-const speltid = getSpeltid(latar)
+// const speltid = getSpeltid(latar)
 
-console.log(speltid);
-
-
-// Uppgift 3: Lägg till ny låt
-// Lägg till en ny låt i albumet.
-
-const newSong = { nr: 3, titel: "Teknikhögskolan", sekunder: 1234495 }
-
-latar.push(newSong)
-
-console.log(latar);
+// console.log(speltid);
 
 
-// Uppgift 4: Sök Artist
-// Hämta album baserat på artistnamn.
+// // Uppgift 3: Lägg till ny låt
+// // Lägg till en ny låt i albumet.
 
-const artisterNamn = soundifyApp.artister
+// const newSong = { nr: 3, titel: "Teknikhögskolan", sekunder: 1234495 }
 
-const getAlbum = ((artist) => {
-    for (let name of artisterNamn) {
-        if (name.namn === artist) {
-            return name.album
-        }
-    }
-    return "Kunde inte hitta artist"
-})
+// latar.push(newSong)
 
-const album = getAlbum("Daniel")
+// console.log(latar);
 
-console.log(album);
 
+// // Uppgift 4: Sök Artist
+// // Hämta album baserat på artistnamn.
+
+// const artisterNamn = soundifyApp.artister
+
+// const getAlbum = ((artist) => {
+//     for (let name of artisterNamn) {
+//         if (name.namn === artist) {
+//             return name.album
+//         }
+//     }
+//     return "Kunde inte hitta artist"
+// })
+
+// const album = getAlbum("Daniel")
+
+// console.log(album);
+
+
+const laptops = [
+  { model: "Pro 16", price: 24000 },
+  { model: "Air 13", price: 11000 },
+  { model: "Studio 15", price: 17000 }
+];
+
+// Sort laptops ascending by price, then pop the last one into mostExpensive:
+
+laptops.sort((a, b) => a.price - b.price)
+const mostExpensive = laptops.Pop()
+
+console.log(mostExpensive);
