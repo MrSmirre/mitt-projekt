@@ -1329,36 +1329,130 @@
 // console.log(totalPrice);
 
 
-const foretag = [
+// const foretag = [
+//     {
+//         avdelningar: [
+//             {
+//                 anstallda: [
+//                     {namn: "Anna", roll: "Utvecklare"}
+//                 ]
+//             }
+//         ]
+//     }
+// ]
+
+
+// const anstalld = foretag[0].avdelningar[0].anstallda
+
+// // console.log(anstalld[0].roll);
+
+
+
+// const skrivUtAllaNamn = (anstalldaArray) => {
+//     const anstalldaNamn = anstalldaArray.map(a => {
+//         return a.namn
+//     })
+
+//     return anstalldaNamn
+// }
+
+// const skrivUtAllaNamnIgen = skrivUtAllaNamn(anstalld)
+
+
+// console.log(skrivUtAllaNamnIgen);
+
+
+const soundifyApp = {
+  artister: [
     {
-        avdelningar: [
-            {
-                anstallda: [
-                    {namn: "Anna", roll: "Utvecklare"}
-                ]
-            }
-        ]
+      namn: "Luna",
+      album: [
+        {
+          titel: "Midnight Sessions",
+          latar: [
+            { nr: 1, titel: "Night Walk", sekunder: 210 },
+            { nr: 2, titel: "Starlight", sekunder: 195 }
+          ]
+        }
+      ]
+    },
+    {
+      namn: "Daniel",
+      album: [
+        {
+          titel: "ETTERAYERGA",
+          latar: [
+            { nr: 1, titel: "yrtj", sekunder: 210 },
+            { nr: 2, titel: "grta", sekunder: 195 }
+          ]
+        }
+      ]
+    },
+    {
+      namn: "Philip",
+      album: [
+        {
+          titel: "gjhatdstzy",
+          latar: [
+            { nr: 1, titel: "Nrsdfffh", sekunder: 210 },
+            { nr: 2, titel: "Sgfho", sekunder: 195 }
+          ]
+        }
+      ]
     }
-]
+  ]
+};
+
+// Uppgift 1: Snabb-navigering
+// Hämta sekunder för "Starlight".
+
+const seconds = soundifyApp.artister[0].album[0].latar[1].sekunder
+
+console.log(seconds);
+
+// Uppgift 2: Räkna Speltid
+// Skriv funktion som räknar ihop total speltid i sekunder.
+
+const latar = soundifyApp.artister[0].album[0].latar
+
+const getSpeltid = ((latarArr) => {
+    let totalTime = 0
+    for (let i = 0; i < latarArr.length; i++) {
+        totalTime += latarArr[i].sekunder
+    }
+    return totalTime
+})
+
+const speltid = getSpeltid(latar)
+
+console.log(speltid);
 
 
-const anstalld = foretag[0].avdelningar[0].anstallda
+// Uppgift 3: Lägg till ny låt
+// Lägg till en ny låt i albumet.
 
-// console.log(anstalld[0].roll);
+const newSong = { nr: 3, titel: "Teknikhögskolan", sekunder: 1234495 }
 
+latar.push(newSong)
 
-
-const skrivUtAllaNamn = (anstalldaArray) => {
-    const anstalldaNamn = anstalldaArray.map(a => {
-        return a.namn
-    })
-
-    return anstalldaNamn
-}
-
-const skrivUtAllaNamnIgen = skrivUtAllaNamn(anstalld)
+console.log(latar);
 
 
-console.log(skrivUtAllaNamnIgen);
+// Uppgift 4: Sök Artist
+// Hämta album baserat på artistnamn.
 
+const artisterNamn = soundifyApp.artister
+
+const getAlbum = ((artist) => {
+    for (let name of artisterNamn) {
+        if (name.namn === artist) {
+            return name.album
+        }
+    }
+    return "Kunde inte hitta artist"
+})
+
+const album = getAlbum("Daniel")
+
+console.log(album);
 
