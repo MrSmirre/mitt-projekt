@@ -1457,15 +1457,3 @@
 // console.log(album);
 
 
-const laptops = [
-  { model: "Pro 16", price: 24000 },
-  { model: "Air 13", price: 11000 },
-  { model: "Studio 15", price: 17000 }
-];
-
-// Sort laptops ascending by price, then pop the last one into mostExpensive:
-
-laptops.sort((a, b) => a.price - b.price)
-const mostExpensive = laptops.Pop()
-
-console.log(mostExpensive);
