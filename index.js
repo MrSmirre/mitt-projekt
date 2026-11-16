@@ -6,8 +6,6 @@
 
 // // const city = "Stockholm";
 
-
-
 // // fruits[2] = "Jordgubbe";
 
 // // console.log(fruits[2]);
@@ -33,7 +31,7 @@
 
 // // if (age >= 15 || withAdult === true && hasTicket === true) {
 // //     console.log("Välkommen in")
-// // } else { 
+// // } else {
 // //         console.log("Du får inte komma in")
 // //     }
 
@@ -43,9 +41,9 @@
 // // if (isLoggedIn) {
 // //     if (userRole === "admin") {
 // //             console.log("Välkommen till adminpanelen!")
-// //         } else { 
-// //             console.log("välkommen vanlig användare!")  
-// //         } 
+// //         } else {
+// //             console.log("välkommen vanlig användare!")
+// //         }
 // //     } else {
 // //         console.log("Du måste logga in först!")
 // // }
@@ -55,14 +53,14 @@
 // // switch (trafficLight) {
 // //     case "grön": console.log("kör");
 // //         break;
-// //     case "gul": 
-// //         console.log("Gör dig redo..."); 
+// //     case "gul":
+// //         console.log("Gör dig redo...");
 // //         break;
-// //     case "röd": 
-// //         console.log("stanna!"); 
+// //     case "röd":
+// //         console.log("stanna!");
 // //         break;
 
-// //     default: 
+// //     default:
 // //         console.log("okänd signal");
 // // }
 
@@ -82,19 +80,11 @@
 // //         console.log("Kolla väderappen igen")
 // // }
 
-
-
-
-
-
-
 // // = --> tilldela nytt värde
 // // == --> Kolla om värdet är truthy
 // // === --> kollar om värdet och datatypen är truthy
 
-
 // // for-loop
-
 
 // for (let i = 1; i < 101; i++) {
 //     console.log(i)
@@ -117,16 +107,13 @@
 //     console.log(fruit[3])
 // }
 
-
 // let energi = 6;
 
 // while (energi > 0){
 //     console.log("sprang ett varv! Energi kvar: " +
-//     energi--); 
+//     energi--);
 // }
 // console.log("Slut på energi! Måste vila.")
-
-
 
 // const elever = [
 //     { name: "Anna", poang: 85 },
@@ -139,10 +126,6 @@
 //     console.log(elev.name + " fick " + elev.poang + " poäng!");
 // }
 
-
-
-
-
 // let energy = 10;
 
 // while (energy > 0) {
@@ -154,10 +137,8 @@
 // let vatten = 10;
 
 // for (let i = vatten; i > 0; i--){
-//     console.log("Vattnet finns kvar" + vatten ) 
+//     console.log("Vattnet finns kvar" + vatten )
 // }
-
-
 
 // let elever = [
 //     { namn: "daniel", alder: 29},
@@ -173,7 +154,6 @@
 //     console.log(elev.namn, elev.alder)
 // }
 
-
 // for (let i = 10; i >= 0; i--)
 
 // if (i === 5) {
@@ -182,8 +162,6 @@
 //     console.log("Sekunder kvar: " + i)
 // }
 // console.log("LIFTOFF!");
-
-
 
 // const cart = ["Mjölk", "Godis", "Bröd", "Godis", "Äpple"]
 
@@ -204,8 +182,6 @@
 //         console.log("Köp: " + item);
 //     }
 // }
-
-
 
 // const weather = "sol";
 
@@ -239,7 +215,6 @@
 
 // console.log("Du har sprungit klart!");
 
-
 // for (let j = 1; j <= 4; j++){
 //     console.log("Du har så här mycket energi kvar: " + j);
 // }
@@ -256,7 +231,6 @@
 //     }
 // }
 
-
 // function halsa (namn) {
 //     return "hej ${namn}"
 // }
@@ -264,8 +238,6 @@
 // const halsa = (name, age, job) => {
 //     console.log("Hej " + name + " " + age + " " + job);
 // }
-
-
 
 // const halsa = (namn) => `Hej ${namn}`;
 
@@ -276,7 +248,7 @@
 
 //     if (age < 18) {
 //         console.log("Du är inte myndig")
-//         return 
+//         return
 //     }
 
 //     console.log("Du är myndig");
@@ -297,13 +269,10 @@
 
 // console.log(skapaKontoObject.message)
 
-
 // const beraknaPris = (titel, pris, moms = 25) => {
 //     const total = pris * (1 + moms / 100);
 //     return { titel, totalPris: total };
 // }
-
-
 
 // En array med objekt (kundvagn)
 // const varukorg = [
@@ -324,24 +293,18 @@
 // const totalt = beraknaTotal(varukorg);
 // console.log(`Att betala: ${totalt} kr`); // "Att betala: 190 kr"
 
-
-
 // const valkommen = (namn, titel = "Medlem") => {
 //   return `Välkommen ${titel} ${namn}!`
-// } 
-
+// }
 
 // console.log(valkommen("Viktor"))
 // console.log(valkommen("klara", "admin"))
-
-
 
 // const addi = (siffraEtt, siffraTva) => {
 //   return siffraEtt * siffraTva
 // }
 
 // console.log(addi(2, 30000))
-
 
 // const weather = (season) => {
 //   switch (season) {
@@ -351,14 +314,13 @@
 //       return "Ta på dig vinterjacka"
 //     case "Blåsigt":
 //       return "Ta på dig vindjacka"
-      
+
 //     default:
 //       return "Kolla väderappen igen"
 //   }
 // }
 
 // console.log(weather("Snö"));
-
 
 // const provPoang = [18, 22, 15, 28, 20];
 
@@ -381,7 +343,6 @@
 
 // const getVipBonus = ()
 
-
 // const checkScore = (a) => {
 //   if (a <= 50) {
 //     return "Underkänd";
@@ -401,7 +362,6 @@
 
 // console.log(checkScore(70));
 
-
 // const checkScore = (a) => {
 //   if (a <= 50) {
 //     return "Underkänd";
@@ -411,7 +371,6 @@
 // }
 // console.log(checkScore(2));
 // console.log(checkScore(222));
-
 
 // const words = "Välkommen"
 
@@ -425,7 +384,6 @@
 // }
 
 // console.log(count(words))
-
 
 // const arr = ["Joel", "Daniel", "Philip", "Kristoffer", "Wictor", "Viktor", "Philip"]
 
@@ -441,7 +399,6 @@
 
 // pedoFinder(arr)
 
-
 //en arrow funktion som skriver ut underkänd om poängen är under 60
 
 // const prov = (poang) => {
@@ -454,9 +411,9 @@
 
 // console.log(prov(60))
 
-// const elever = [ 
-//   {namn: "Daniel", point: 0}, 
-//   {namn: "Johan", point: 4}, 
+// const elever = [
+//   {namn: "Daniel", point: 0},
+//   {namn: "Johan", point: 4},
 //   {namn: "Alex", point: 8},
 //   {namn: "Kornelia", point: 5}
 // ]
@@ -475,7 +432,6 @@
 
 // console.log(prov(elever))
 
-
 // const list = ["Mjölk", "vetemjöl", "Ägg", "Kebabrulle"]
 
 // const cart = (items) => {
@@ -490,15 +446,9 @@
 
 // cart(list)
 
-
-
-
 // for (let i = 1; i <= 20; i++) {
 //   console.log(i);
 // }
-
-
-
 
 // const welcome = (name = "Daniel", title = "Medlem") => {
 //   return `Välkommen ${title} ${name}`
@@ -508,21 +458,17 @@
 // console.log(welcome("Leo"))
 // console.log(welcome())
 
-
-
 // const provPoang = [18, 22, 15, 28, 20]
 
 // const rakenaMedel = (provPoangArr) => {
 //   let sum = 0
 //   for (const poang of provPoangArr) {
-//     sum += poang 
+//     sum += poang
 //   }
 //   return sum / provPoangArr.length
 // }
 
 // console.log("Medelpoäng på provet: ", rakenaMedel(provPoang))
-
-
 
 // const kunder = [
 //   { namn: "Mia", Vip: true, kopSumma: 1200 },
@@ -530,12 +476,11 @@
 //   { namn: "Robin", Vip: true, kopSumma: 800 }
 // ];
 
-
 // const getVipBonus = (kundArr) => {
 //   const resultat = []
 
 //   for (const kund of kundArr) {
-   
+
 //     if (kund.Vip === true) {
 //       const rabatt = kund.kopSumma * 0.9
 //       const vipKund = {namn: kund.namn, kopSumma: rabatt}
@@ -561,8 +506,6 @@
 
 // console.log(skrivUtResult)
 
-
-
 // const firstName = "Viktor"
 
 // const age = 28
@@ -570,7 +513,6 @@
 // const isStudent = true
 
 // console.log(firstName + " " + age + " Är grabben student? = " + isStudent)
-
 
 // const favoriteFoods = ["Köttbullar", "Glas", "Blåbär"]
 
@@ -582,7 +524,6 @@
 
 // console.log(favoriteFoods.length);
 
-
 // const car = { brand: "Toyota", year: 2023}
 
 // console.log(car.brand);
@@ -591,11 +532,7 @@
 
 // console.log(car.year + " " + car.brand);
 
-
-
 // const siffror = [18, 2, 5, 28, 0]
-
-
 
 // const over10 = siffror.filter((siffra, i) => {
 //   console.log(i + " - " + siffra);
@@ -604,12 +541,7 @@
 
 // console.log(over10);
 
-
 // console.log(siffror);
-
-
-
-
 
 // const versaler = (str) => str.toUpperCase();
 
@@ -622,8 +554,6 @@
 // console.log(formateraText("Hej", versaler));
 // console.log(formateraText("hej", citera));
 
-
-
 // const tal = [4, 15, 8, 25, 2];
 
 // const over10 = tal.filter((numb) => numb > 10)
@@ -633,26 +563,23 @@
 // console.log(over10)
 // console.log(plus5)
 
-
 // const tal = [4, 15, 8, 25, 2];
 
 // const filtrera = (filtreras, arr) => {
-//   const result = [] 
+//   const result = []
 //   for ( const i of arr) {
-//     if (filtreras(i)) result.push(i)  
+//     if (filtreras(i)) result.push(i)
 //   }
 //   return result
 // }
 
 // console.log(filtrera((numb) => numb > 10,tal))
 
-
 // const firstName = "Viktor"
 // const age = 29
 // const isStudent = true
 
 // console.log("Hej mitt namn är " + ", jag är " + age + " och är student = " + isStudent);
-
 
 // const favoriteFoods = ["Kåldolmar", "Köttbullar", "Ett stekt ägg"]
 
@@ -661,8 +588,6 @@
 // favoriteFoods.push("Hallonsylt")
 
 // console.log(favoriteFoods.length + " " + favoriteFoods[3]);
-
-
 
 // const car = { brand: "Volvo", model: "740", year: 1994 }
 
@@ -676,7 +601,6 @@
 
 // const weather = "Sol"
 
-
 // switch (weather) {
 //   case "Snö":
 //     console.log("Ta på dig jacka");
@@ -684,15 +608,12 @@
 //   case "Regn":
 //     console.log("Ta på dig regnjacka");
 //     break;
-//   case "Sol": 
+//   case "Sol":
 //     console.log("Ta på dig solglasögon lil bro");
 //     break;
 //     default:
-//       console.log("Kolla väderappen igen")  
+//       console.log("Kolla väderappen igen")
 // }
-
-
-
 
 // const season = ["Januari", "Februari", "Mars", "April", "Maj", "Juni", "Juli", "Augusti", "September", "Oktober", "November", "December"]
 
@@ -708,12 +629,11 @@
 //     break;
 //   case "Höst":
 //     console.log("Kratta löv");
-//     break;      
+//     break;
 //   default:
 //     console.log("Gå ut o kolla vad det är för årstid");
-    
-// }
 
+// }
 
 // for (let i = 5; i >= 1; i--) {
 //   if (i === 3) {
@@ -723,7 +643,6 @@
 //   }
 // }
 // console.log("LIFTOFF!")
-
 
 // const cart = ["Mjölk", "Godis", "Bröd", "Godis", "Äpple"]
 
@@ -735,16 +654,12 @@
 //   }
 // }
 
-
-
 // const valkommen = (namn, titel = "Medlem") => {
 //   return `Välkommen ${namn} ${titel}`
-// } 
+// }
 
 // console.log(valkommen("klara", "Admin"));
 // console.log(valkommen("Leo"));
-
-
 
 // const provPoang = [18, 22, 15, 28, 20]
 
@@ -757,7 +672,6 @@
 // }
 
 // console.log("Medelpoäng på provet: ", (rakenaMedel(provPoang)))
-
 
 // const kunder = [
 //   { namn: "Mia", arVip: true, kopSumma: 1200},
@@ -782,13 +696,11 @@
 
 // console.log(vipRabatter)
 
-
 // const firstName = "Viktor"
 // const age = 29
 // const isStudent = true
 
 // console.log("Hej mitt namn är " + firstName + " och är " + age + " år gammal " + " är jag student? " + isStudent);
-
 
 // const favoriteFoods = ["Kebab", "Köttbulle", "Köttfärs"]
 
@@ -807,7 +719,6 @@
 
 // foodList(favoriteFoods)
 
-
 // const car = {brand: "Volvo", model: "v70", year: 2014}
 
 // console.log(car.brand);
@@ -817,7 +728,6 @@
 // car.year = 2024
 
 // console.log(car.year);
-
 
 // const weather = "Snö"
 
@@ -834,7 +744,6 @@
 //   default:
 //     console.log("Kolla väderappen igen");
 // }
-
 
 // let energi = 5;
 
@@ -862,7 +771,7 @@
 //     console.log("Onödig vara, köp inte!");
 //   } else {
 //     console.log("Köp: " + item);
-    
+
 //   }
 // }
 
@@ -885,7 +794,6 @@
 
 // console.log("Medelpoäng på provet: ", rakenaMedel(siffror));
 
-
 // const kunder = [
 //   { namn: "Mia", arVip: true, kopSumma: 1200 },
 //   { namn: "Sam", arVip: false, kopSumma: 450 },
@@ -905,7 +813,6 @@
 
 // console.log(getVipBonus(kunder))
 
-
 // const tal = [10, 20, 30, 40];
 
 // // push & pop (Muterar)
@@ -914,7 +821,6 @@
 // tal.pop(); // [10, 20, 30, 40]
 // console.log(tal);
 
-
 // // slice (Icke-muterande)
 // const del = tal.slice(1, 3); // ➔ [20, 30]
 // console.log(del);
@@ -922,7 +828,6 @@
 // splice (Muterar: starta vid index 1, ta bort 2)
 // tal.splice(1, 2); // tal är nu [10, 40]
 // console.log(tal);
-
 
 // const poang = [8, 15, 22, 12, 45, 65, 87];
 
@@ -934,7 +839,6 @@
 // // ➔ [10, 17, 24, 14]
 // console.log(uppdaterade);
 
-
 // // 3. filter: Behåll endast poäng >= 15
 // const godkanda = poang.filter(p => p >= 15);
 // // ➔ [15, 22]
@@ -945,7 +849,6 @@
 
 // const uppdaterade = poang.map(p => p * 2)
 // console.log(uppdaterade);
-
 
 // poang.forEach(p => console.log(p))
 
@@ -972,7 +875,6 @@
 // const dubbel = over15.map(p => p * 2)
 
 // console.log(dubbel);
-
 
 // const temp = [12, 18, 25, 8, 30, 15]
 
@@ -1008,19 +910,17 @@
 //         break;
 //     default:
 //         console.log("Kolla vädret igen")
-            
-// }
 
+// }
 
 // for (i = 5; i >= 1; i--) {
 //     if (i === 3){
 //         console.log("Halvvägs där! " + i);
-//     } else { 
-//         console.log("Sekunder kvar: " + i) 
+//     } else {
+//         console.log("Sekunder kvar: " + i)
 //     }
 // }
 // console.log("LIFTOFF!");
-
 
 // const valkommen = (namn, titel = "Medlem") => {
 //     return `Välkommen ${namn} ${titel}`
@@ -1049,7 +949,6 @@
 //   { namn: "Robin", arVip: true, kopSumma: 800 }
 // ];
 
-
 // const getVipBonus = (kundArr) => {
 //     const resultat = []
 //     for (const p of kundArr) {
@@ -1062,7 +961,6 @@
 // }
 
 // console.log(getVipBonus(kunder))
-
 
 // const car = {brand: "volvo", model: "v70", age: 1998}
 // console.log(car.brand)
@@ -1084,12 +982,12 @@
 // const weather = "Rgn"
 
 // switch (weather) {
-//     case "Regn": 
+//     case "Regn":
 //     console.log("Ta på dig regnjacka");
 //     break;
 //     default:
 //     console.log("Kolla vädret igen");
-    
+
 // }
 
 // for (let i = 5; i >= 1; i--) {
@@ -1097,7 +995,7 @@
 //         console.log("Halvvägs där" + i);
 //     } else {
 //         console.log(i);
-        
+
 //     }
 // }
 // console.log("Liftoff!!!");
@@ -1106,9 +1004,9 @@
 
 // for (item of cart) {
 //     if (item === "Godis"){
-//         console.log("Varning, onödig vara!");        
+//         console.log("Varning, onödig vara!");
 //     } else if (item === "Bannizz") {
-//         console.log("spring förfan") 
+//         console.log("spring förfan")
 //     } else {
 //         console.log("Köp förfan: " + item);
 //     }
@@ -1133,7 +1031,6 @@
 // }
 
 // console.log("Medelpoäng på provet: ", rakenaMedel(provPoang));
-
 
 // const kunder = [
 //   { namn: "Mia", arVip: true, kopSumma: 1200 },
@@ -1163,32 +1060,29 @@
 //     break;
 //     default:
 //         console.log("Kolla väderappen igen");
-        
-// }
 
+// }
 
 // const cart = ["Mjölk", "Godis", "Bröd", "Godis", "Äpple"];
 
 // for (i of cart) {
 //     if (i === "Godis") {
 //         console.log("Onödig vara");
-        
+
 //     } else {
 //         console.log("Köp: " + i);
-        
+
 //     }
 // }
-
 
 // for (i = 5; i >= 1; --i) {
 //     if (i === 3) {
 //         console.log("Halvvägs där " + i);
-//     } else { 
+//     } else {
 //         console.log("Sekunder kvar " + i);
 //     }
 // }
 // console.log("LIFTOFF");
-
 
 // const valkommen = (namn, titel = "Gäst") => {
 //     return `Välkommen ${titel} ${namn}`
@@ -1197,12 +1091,11 @@
 // console.log(valkommen("Viktor", "Admin"));
 // console.log(valkommen("Leo"));
 
-
 // const provPoang = [18, 22, 15, 28, 20];
 
 // const rakenaMedel = (arr) => {
 //     let sum = 0
-    
+
 //     for (p of arr) {
 //         sum += p
 //     }
@@ -1210,7 +1103,6 @@
 // }
 
 // console.log(rakenaMedel(provPoang));
-
 
 // const kunder = [
 //   { namn: "Mia", arVip: true, kopSumma: 1200 },
@@ -1232,7 +1124,6 @@
 
 // const vipRabatter = getVipBonus(kunder)
 // console.log(vipRabatter);
-
 
 // const versaler = (str) => str.toUpperCase()
 // const citera = (str) => `"${str}"`
@@ -1259,7 +1150,6 @@
 // const plus5 = arr.map(n => n += 5)
 
 // console.log(plus5);
-
 
 // const stader = ["Stockholm", "Göteborg", "Malmö"];
 
@@ -1292,16 +1182,14 @@
 // const temp = [12, 18, 25, 8, 30, 15]
 
 // const over15 = temp.filter((t) => t > 15)
- 
+
 // console.log(over15);
- 
+
 // const dubblerade = over15.map((t) => t * 2)
 
 // console.log(dubblerade);
 
 // console.log(temp);
-
-
 
 // const kund = {
 //     namn: "Erik",
@@ -1310,7 +1198,7 @@
 //             artiklar: [
 //                 { titel: "Skärm", pris: 3000},
 //                 { titel: "Mus", pris: 500}
-//             ]        
+//             ]
 //         }
 //     ]
 // }
@@ -1320,14 +1208,12 @@
 // const priset = kundArtiklar[1].pris
 // console.log(priset);
 
-
 // let totalPrice = 0
 // kundArtiklar.forEach(artikel => {
 //     totalPrice += artikel.pris
 // })
 
 // console.log(totalPrice);
-
 
 // const foretag = [
 //     {
@@ -1341,12 +1227,9 @@
 //     }
 // ]
 
-
 // const anstalld = foretag[0].avdelningar[0].anstallda
 
 // // console.log(anstalld[0].roll);
-
-
 
 // const skrivUtAllaNamn = (anstalldaArray) => {
 //     const anstalldaNamn = anstalldaArray.map(a => {
@@ -1358,9 +1241,7 @@
 
 // const skrivUtAllaNamnIgen = skrivUtAllaNamn(anstalld)
 
-
 // console.log(skrivUtAllaNamnIgen);
-
 
 // const soundifyApp = {
 //   artister: [
@@ -1427,7 +1308,6 @@
 
 // console.log(speltid);
 
-
 // // Uppgift 3: Lägg till ny låt
 // // Lägg till en ny låt i albumet.
 
@@ -1436,7 +1316,6 @@
 // latar.push(newSong)
 
 // console.log(latar);
-
 
 // // Uppgift 4: Sök Artist
 // // Hämta album baserat på artistnamn.
@@ -1456,4 +1335,57 @@
 
 // console.log(album);
 
+// let braJson = '{"namn": "anna", "alder": 25}';
+// let daligJson = "Detta är inte JSON";
 
+// function parseUser(str) {
+//   try {
+//     const data = JSON.parse(str);
+//     console.log("Success:", data);
+//     return data;
+//   } catch (error) {
+//     console.error("Ogiltig data");
+//     return "Ogiltig data"
+//   } finally {
+//     console.log("Det är OK");
+//   }
+// }
+
+// console.log("Test 1:", parseUser(braJson));
+// console.log("Test 2", parseUser(daligJson));
+
+// // Case A:
+// const scores = [10, 20, 30];
+// scores.toLowerCase();
+
+// Case B:
+// const greetUser = () => {
+//   console.log(welcomeMessage);
+// };
+// greetUser();
+
+// // Case C:
+// const profile = { firstName: "Leo" lastName: "Smith" };
+
+let allaAnvandera = [
+  { id: 1, namn: "Bo" },
+  { id: 2, namn: "Sara" },
+];
+
+const sokID = (id, lista) => {
+  try {
+    const anvandare = lista.find((item) => {
+      return id === item.id;
+    });
+
+    if (!anvandare) {
+      throw new Error("Användare hittades inte");
+    }
+    return anvandare.namn;
+  } catch (error) {
+    return error.message;
+  }
+};
+
+const kor = sokID(2, allaAnvandera);
+console.log(kor);
