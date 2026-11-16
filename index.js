@@ -1367,25 +1367,184 @@
 // // Case C:
 // const profile = { firstName: "Leo" lastName: "Smith" };
 
-let allaAnvandera = [
-  { id: 1, namn: "Bo" },
-  { id: 2, namn: "Sara" },
-];
+// let allaAnvandera = [
+//   { id: 1, namn: "Bo" },
+//   { id: 2, namn: "Sara" },
+// ];
 
-const sokID = (id, lista) => {
-  try {
-    const anvandare = lista.find((item) => {
-      return id === item.id;
-    });
+// const sokID = (id, lista) => {
+//   try {
+//     const anvandare = lista.find((item) => {
+//       return id === item.id;
+//     });
 
-    if (!anvandare) {
-      throw new Error("Användare hittades inte");
-    }
-    return anvandare.namn;
-  } catch (error) {
-    return error.message;
-  }
-};
+//     if (!anvandare) {
+//       throw new Error("Användare hittades inte");
+//     }
+//     return anvandare.namn;
+//   } catch (error) {
+//     return error.message;
+//   }
+// };
 
-const kor = sokID(2, allaAnvandera);
-console.log(kor);
+// const kor = sokID(2, allaAnvandera);
+// console.log(kor);
+
+// let braJson = '{"namn": "Anna", "alder": 25}'
+// let daligJson = "Detta är inte JSON"
+
+// const parseUser = (str) => {
+//     try{
+//         return JSON.parse(str)
+//     } catch (error) {
+//         return "Ogiltig data"
+//     }
+
+// }
+
+// console.log("Test 1:", parseUser(braJson));
+// console.log("Test 2:", parseUser(daligJson));
+
+// let allaAnvandera = [
+//     { id: 1, namn:"Bo"},
+//     { id: 2, namn:"Sara"}
+// ]
+
+// const sokID = (id, lista) => {
+//     try{
+//         const found = lista.find( item => {
+//             return item.id === id
+//         })
+//         if(found === undefined) {
+//             throw new Error("Användare hittades inte!")
+//         }
+//         return found.namn
+//     } catch (error) {
+//         return error.message
+//     }
+
+// }
+
+// const kor = sokID(1, allaAnvandera)
+// console.log(kor);
+
+// let allaAnvandera = [
+//   { id: 1, namn: "Bo" },
+//   { id: 2, namn: "Sara" },
+// ];
+
+// const sokID = (id, lista) => {
+//   try {
+//     const anvandare = lista.find((item) => id === item.id);
+//     if (!anvandare) {
+//       throw new Error("Användare hittades inte");
+//     }
+//     return anvandare.namn;
+//   } catch (error) {
+//     return error.message;
+//   }
+// };
+
+// const kor = sokID(2, allaAnvandera);
+// console.log(kor);
+
+// const parseUserData = (jsonString) => {
+//   // Write your try / catch / finally block here
+//   try{
+//     const parse = JSON.parse(jsonString)
+//     return parse
+//   } catch (err) {
+//     console.error("failed to parse", err.message);
+//     return null
+//   }
+//   finally{
+//     console.log("JSON parsing finished.");
+
+//   }
+// };
+
+// // Test calls:
+// parseUserData('{"username": "alex99"}'); // Returns object
+// parseUserData('Invalid JSON'); // Returns null
+
+// const divide = (a, b) => {
+//   if (typeof a !== "number" || typeof b !== "number") {
+//     throw new TypeError("Both arguments must be numbers!");
+//   }
+
+//   if (b === 0) {
+//     throw new Error("Cannot divide by zero!");
+//   }
+
+//   return a / b;
+// };
+
+// try {
+//   console.log(divide(15, 0));
+// } catch (error) {
+//   console.error(`${error.name}, ${error.message}`);
+// } finally {
+//     console.log("Färdig");
+// }
+
+// console.log(0.1 + 0.2);
+
+// const divide = (a, b) => {
+//     if (typeof a !== "number" || typeof b !== "number"){
+//         throw new TypeError("Both arguments must be numbers!")
+//     } if (b === 0) {
+//         throw new   Error("Cannot divide by zero!")
+//     }
+//     return a / b
+// }
+
+// try {
+//     console.log(divide(10, 2));
+// } catch (error){
+//     console.error(`${error.name} ${error.message}`)
+// } finally {
+//     console.log("Färdig");
+// }
+
+// const valkommen = (namn, titel = "Medlem") => {
+//     return (`Välkommen ${namn} ${titel}`)
+// }
+
+// const kor = valkommen("Viktor")
+
+// console.log(kor);
+
+// const provPoang = [18, 22, 15, 28, 20];
+
+// const rakenaMedel = (siffror) => {
+//   let summa = 0;
+//   for (const siffra of siffror) {
+//     summa += siffra;
+//   }
+//   return summa / siffror.length;
+// };
+
+// const resultat = rakenaMedel(provPoang);
+// console.log(resultat);
+
+// const kunder = [
+//   { namn: "Mia", arVip: true, kopSumma: 1200 },
+//   { namn: "Sam", arVip: false, kopSumma: 450 },
+//   { namn: "Robin", arVip: true, kopSumma: 800 }
+// ];
+
+// const getVipBonus = (kundArr) => {
+//     const resultat = []
+//     for (const kund of kundArr) {
+//         if (kund.arVip === true) {
+//            const nySumma = kund.kopSumma * 0.9
+//            resultat.push({namn: kund.namn, nyttPris: nySumma}) 
+//         }
+//     }
+//     return resultat
+// }
+
+// const kor = getVipBonus(kunder)
+// console.log(kor);
+
+
