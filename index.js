@@ -1538,7 +1538,7 @@
 //     for (const kund of kundArr) {
 //         if (kund.arVip === true) {
 //            const nySumma = kund.kopSumma * 0.9
-//            resultat.push({namn: kund.namn, nyttPris: nySumma}) 
+//            resultat.push({namn: kund.namn, nyttPris: nySumma})
 //         }
 //     }
 //     return resultat
@@ -1547,4 +1547,336 @@
 // const kor = getVipBonus(kunder)
 // console.log(kor);
 
+// const firstName = "viktor";
+// const age = 29
+// const isStudent = true
+
+// console.log("Hej jag heter " + firstName + " och jag är " + age + ". Är jag student? " + isStudent);
+
+// const favoriteFoods = ["äpple", "banan", "päron"];
+
+// console.log(favoriteFoods[0]);
+
+// favoriteFoods.push("Apelsin");
+
+// console.log(favoriteFoods.length);
+// console.log(favoriteFoods);
+
+// const car = {
+//   brand: "Volvo",
+//   model: "xc70",
+//   year: 2009,
+// };
+
+// console.log(car);
+
+// car.year = 1997
+
+// console.log(car);
+
+// const weather = "Regn"
+
+// switch(weather) {
+//     case "Sol":
+//         console.log("Solglasögon");
+//     break
+
+//     case "Regn":
+//         console.log("Regnjacka");
+//     break
+
+//     default:
+//         console.log("Kolla vädret");
+
+// }
+
+// for (let i = 5; i >= 1; i--) {
+//   if (i === 3) {
+//     console.log("Halvvägs där");
+//   } else {
+//     console.log("Sekunder kvar " + i);
+//   }
+// }
+
+// console.log("Liftoff");
+
+// for (let i = 0; i <= 11; i++) {
+//   console.log("Hej");
+//   console.log("Hejdå");
+// }
+
+// const cart = ["Mjölk", "Godis", "Bröd", "Godis", "Äpple"];
+
+// for (const item of cart) {
+//     if(item === "Godis"){
+//         console.log("⚠️ Varning: Onödig vara! " + item);
+//     } else {
+//         console.log("Köp: " + item);
+
+//     }
+// }
+
+// const valkommen = (namn, titel = "Gäst") => {
+//     return `Hej ${titel} ${namn}`
+// }
+
+// const getValkommen = valkommen("viktor")
+
+// console.log(getValkommen);
+
+// const provPoang = [18, 22, 15, 28, 20]
+
+// function rakenaMedel(arr) {
+//     let totalSumma = 0
+//     for(const num of arr) {
+//         totalSumma += num
+//     }
+//     return totalSumma / arr.length
+// }
+
+// const medelvärde = rakenaMedel(provPoang)
+
+// console.log("Medelpoäng på provet: " + medelvärde);
+
+// const kunder = [
+//   { namn: "Mia", arVip: true, kopSumma: 1200 },
+//   { namn: "Sam", arVip: false, kopSumma: 450 },
+//   { namn: "Robin", arVip: true, kopSumma: 800 }
+// ];
+
+// const getVipBonus = (kundArr) => {
+//     const result = []
+//     for (const kund of kundArr){
+//         if(kund.arVip === true){
+//             const nyPris = kund.kopSumma * 0.9
+//             result.push({namn: kund.namn, nyttPris: nyPris})
+//         }
+//     }
+//     return result
+// }
+
+// const vipRabatter = getVipBonus(kunder)
+
+// console.log(vipRabatter);
+
+// const versaler = (str) => str.toUpperCase()
+// const citera = (str) => `"${str}"`
+
+// const formateraText = (text, callback) => callback(text)
+
+// console.log(formateraText("Jag heter Rille och är tolv år gammal", versaler));
+// console.log(formateraText("Jag heter Rille och är tolv år gammal", citera));
+
+// const tal = [4, 15, 8, 25, 2];
+
+// const storeAn10 = tal.filter((n) => n > 10);
+// const plus5 = storeAn10.map((n) => n + 5);
+
+// console.log(storeAn10);
+// console.log(plus5);
+
+// const stader = ["Stockholm", "Göteborg", "Malmö"];
+
+// stader.push("Uppsala")
+
+// const tvaStader = stader.slice(0, 2)
+
+// console.log(stader);
+// console.log(tvaStader);
+
+// const temp = [12, 18, 25, 8, 30, 15];
+
+// const over15 = temp.filter((t) => t > 15);
+
+// const dubblera = over15.map(t => t * 2)
+
+// console.log(temp);
+
+// console.log(over15);
+
+// console.log(dubblera);
+
+// const kund = {
+//   namn: "Erik",
+//   bestallningar: [
+//     {
+//       artiklar: [
+//         { titel: "Skärm", pris: 3000 },
+//         { titel: "Mus", pris: 500 },
+//       ],
+//     },
+//   ],
+// };
+
+// const getPris = (arr) => {
+//   const artikel = arr.bestallningar[0].artiklar;
+//   let totalPris = 0;
+//   for (const tid of artikel) {
+//     totalPris += tid.pris;
+//   }
+//   return totalPris;
+// };
+
+// const artiklarPris = getPris(kund);
+
+// console.log(artiklarPris);
+
+// const kundArtiklar = kund.bestallningar[0].artiklar;
+
+// let total = 0
+
+// for (const a of kund.bestallningar[0].artiklar){
+//     total += a.pris
+// }
+
+// console.log(total);
+
+// const foretag = [
+//   {
+//     avdelningar: [
+//       {
+//         anstallda: [
+//           { namn: "Anna", roll: "Utvecklare" },
+//           { namn: "Joel", roll: "Utvecklare" },
+//           { namn: "Daniel", roll: "Utvecklare" },
+//           { namn: "Lennart", roll: "Utvecklare" },
+//           { namn: "Joar", roll: "Utvecklare" },
+//         ]
+//       }
+//     ]
+//   }
+// ];
+
+// const anstallda = foretag[0].avdelningar[0].anstallda
+
+// const allaNamn = (anstalldaNamn) => {
+//   const namn = []
+//   for (const n of anstalldaNamn){
+//     namn.push(n.namn)
+//   }
+//   return namn
+// }
+
+// const namnetPaAnstallda = allaNamn(anstallda)
+
+// console.log(namnetPaAnstallda);
+
+const soundifyApp = {
+  artister: [
+    {
+      namn: "Luna",
+      album: [
+        {
+          titel: "Midnight Sessions",
+          latar: [
+            { nr: 1, titel: "Night Walk", sekunder: 210 },
+            { nr: 2, titel: "Starlight", sekunder: 195 },
+          ],
+        },
+      ],
+    },
+  ],
+};
+
+// 1.
+// const playtime = soundifyApp.artister[0].album[0].latar
+
+// const soundifyAppGetPlaytime = (searchPlaytime, song) => {
+//     for (let t of searchPlaytime){
+//         if(t.titel === song){
+//             return t.sekunder
+//         }
+//     }
+//     return "Kunde inte hitta låten"
+// }
+
+// const search = soundifyAppGetPlaytime(playtime, "Starlight")
+
+// console.log(search);
+
+// 2.
+// const playtime = soundifyApp.artister[0].album[0].latar
+
+// const soundifyAppGetPlaytime = (searchPlaytime) => {
+//     let time = 0
+//     for (const t of searchPlaytime){
+//         time +=  t.sekunder
+//     }
+//     return time
+// }
+
+// const totalPlaytime = soundifyAppGetPlaytime(playtime)
+
+// console.log(totalPlaytime);
+
+// 3.
+
+// const parseUserData = (jsonString) => {
+//   try {
+//     return JSON.parse(jsonString);
+//   } catch (error) {
+//     console.error("Failed to parse JSON:", error.message);
+//     return null;
+//   } finally {
+//     console.log("JSON parsing finished.");
+//   }
+// };
+
+// // Test calls:
+// const log = parseUserData('{"username": "alex99", "year": "1998"}'); // Returns object
+// const log2 = parseUserData("Invalid JSON"); // Returns null
+
+// console.log(log);
+// console.log(log2);
+
+// const parseUserData = (jsonString) => {
+//   try {
+//     return JSON.parse(jsonString);
+//   } catch (error) {
+//     console.error("Nu blev det fel här " + error.message);
+//     return null;
+//   } finally {
+//     console.log("Json parsing finished");
+//   }
+// };
+
+// // Test calls:
+// console.log(parseUserData('{"username": "alex99"}')); // Returns object
+// console.log(parseUserData("Invalid JSON")); // Returns null
+
+// const divide = (a, b) => {
+//     if(typeof a !== 'number' || typeof b !== 'number'){
+//         throw new TypeError("Both arguments must be numbers!")
+//     }
+//     if(b === 0){
+//         throw new Error("Cannot divide be zero!")
+//     }
+//     return a / b
+// }
+
+// try{
+//    console.log(divide(10, 4))
+// } catch (error) {
+//     console.error(`[${error.name} ${error.message}]`);
+// } finally{
+//     console.log("Färdig");
+// }
+
+const divide = (a, b) => {
+  if (typeof a !== "number" || typeof b !== "number") {
+    throw new TypeError("Both arguments must be numbers!");
+  }
+  if (b === 0) {
+    throw new Error("Cannot divide by zero!");
+  }
+  return a / b;
+};
+
+try {
+  console.log(divide(10, 5));
+} catch (error) {
+  console.error(`${error.message} ${error.name}`);
+} finally {
+  console.log("Färdig");
+}
 
