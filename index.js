@@ -1311,7 +1311,7 @@
 // // Uppgift 3: Lägg till ny låt
 // // Lägg till en ny låt i albumet.
 
-// const newSong = { nr: 3, titel: "Teknikhögskolan", sekunder: 1234495 }
+// const newSong = { nr: 3, titel: "a", sekunder: 1234495 }
 
 // latar.push(newSong)
 
@@ -1761,22 +1761,22 @@
 
 // console.log(namnetPaAnstallda);
 
-const soundifyApp = {
-  artister: [
-    {
-      namn: "Luna",
-      album: [
-        {
-          titel: "Midnight Sessions",
-          latar: [
-            { nr: 1, titel: "Night Walk", sekunder: 210 },
-            { nr: 2, titel: "Starlight", sekunder: 195 },
-          ],
-        },
-      ],
-    },
-  ],
-};
+// const soundifyApp = {
+//   artister: [
+//     {
+//       namn: "Luna",
+//       album: [
+//         {
+//           titel: "Midnight Sessions",
+//           latar: [
+//             { nr: 1, titel: "Night Walk", sekunder: 210 },
+//             { nr: 2, titel: "Starlight", sekunder: 195 },
+//           ],
+//         },
+//       ],
+//     },
+//   ],
+// };
 
 // 1.
 // const playtime = soundifyApp.artister[0].album[0].latar
@@ -1862,21 +1862,105 @@ const soundifyApp = {
 //     console.log("Färdig");
 // }
 
-const divide = (a, b) => {
-  if (typeof a !== "number" || typeof b !== "number") {
-    throw new TypeError("Both arguments must be numbers!");
+// const divide = (a, b) => {
+//   if (typeof a !== "number" || typeof b !== "number") {
+//     throw new TypeError("Both arguments must be numbers!");
+//   }
+//   if (b === 0) {
+//     throw new Error("Cannot divide by zero!");
+//   }
+//   return a / b;
+// };
+
+// try {
+//   console.log(divide(10, 5));
+// } catch (error) {
+//   console.error(`${error.message} ${error.name}`);
+// } finally {
+//   console.log("Färdig");
+// }
+
+// const processPayment = (balance, amount) => {
+//   if (
+//     typeof balance !== "number" ||
+//     typeof amount !== "number"  ||
+//     Number.isNaN(balance) ||
+//     Number.isNaN(amount)
+//   ){
+//     throw new Error("Belopp måste vara siffror")
+//   }
+//   if(amount <= 0){
+//     throw new Error("Belopp får inte vara 0 eller mindre")
+//   }
+//   if(amount > balance){
+//     throw new Error("amount får inte vara större än balance")
+//   }
+//   return balance - amount
+// }
+
+// console.log(processPayment(500, 100));
+// console.log(processPayment(500, -100))
+// console.log(processPayment(500, 900));
+// console.log(processPayment("500", null));
+
+// const divide = (a, b) => {
+//   if (typeof a !== "number" || typeof b !== "number") {
+//     throw new TypeError("Cannot divide by zero!");
+//   }
+//   if (b === 0) {
+//     throw new Error("Cannot divide by 0");
+//   }
+//   return a / b;
+// };
+
+// try {
+//   const siffror = divide(10, 2);
+//   console.log("Det blev", siffror);
+// } catch (error) {
+//   console.error(error.message + error.name);
+// } finally {
+//   console.log("Klar");
+// }
+
+// const calculateTax = (price) => price * 0.25
+// console.log(calculateTax("100kr"));
+
+// const calculateTaxSafe = (price) => {
+//   if (typeof price !== "number" || Number.isNaN(price) || price < 0) {
+//     throw new Error("Vill ha en positiv siffra");
+//   }
+//   return price * 0.25;
+// };
+
+// const calculate = calculateTaxSafe(10)
+
+// console.log(calculate);
+
+// const registerUser = (user) => {
+//     if(!user || typeof user !== "object"){
+//         return {ok: false, error: "Missing user object"}
+//     }
+//     if(!user.email?.includes("@")){
+//         return {ok: false, error: "Invlaid email format"}
+//     }
+// const cleanEmail = user.email.trim().toLowerCase()
+//     return {ok: true, email: cleanEmail}
+// }    
+
+
+
+
+const registerUser = (user) => {
+  if (!user || typeof user !== "object") {
+    return { ok: false, error: "Missing user object" };
   }
-  if (b === 0) {
-    throw new Error("Cannot divide by zero!");
+  if (!user.email?.includes("@")) {
+    return { ok: false, error: "Invalid email format" };
   }
-  return a / b;
+  const cleanEmail = user.email.trim().toLowerCase();
+  return { ok: true, email: cleanEmail };
 };
 
-try {
-  console.log(divide(10, 5));
-} catch (error) {
-  console.error(`${error.message} ${error.name}`);
-} finally {
-  console.log("Färdig");
-}
+const anvandare = registerUser({mail: "Viktor@hotmail.com"})
+console.log(anvandare);
 
