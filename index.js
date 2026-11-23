@@ -1945,22 +1945,54 @@
 //     }
 // const cleanEmail = user.email.trim().toLowerCase()
 //     return {ok: true, email: cleanEmail}
-// }    
+// }
 
+// const registerUser = (user) => {
+//   if (!user || typeof user !== "object") {
+//     return { ok: false, error: "Missing user object" };
+//   }
+//   if (!user.email?.includes("@")) {
+//     return { ok: false, error: "Invalid email format" };
+//   }
+//   const cleanEmail = user.email.trim().toLowerCase();
+//   return { ok: true, email: cleanEmail };
+// };
 
+// const anvandare = registerUser({mail: "Viktor@hotmail.com"})
+// console.log(anvandare);
 
+// const orderBtn = document.querySelector("#viktors-btn")
 
-const registerUser = (user) => {
-  if (!user || typeof user !== "object") {
-    return { ok: false, error: "Missing user object" };
+// console.log("1. Här fortsätter koden");
+
+// orderBtn.addEventListener("click", () => {
+//   console.log("3. Klickades");
+// })
+
+// console.log("2. Koden slutar");
+
+// console.log("Apple");
+
+// setTimeout(() => {
+//   console.log("Banana");
+// }, 1000)
+
+// setTimeout(() => {
+//   console.log("Cherry");
+// }, 0)
+
+// console.log("Date");
+
+const products = [
+  { name: "Banana", price: 100},
+  { name: "Apple", price: 20},
+  { name: "Ananas", price: 70},
+  { name: "Pear", price: 50},
+];
+
+setTimeout(() => {
+  const cheapProducts = products.filter((p) => p.price < 100);
+  for(const product of cheapProducts){
+    console.log(`${product.name} ${product.price}`);
   }
-  if (!user.email?.includes("@")) {
-    return { ok: false, error: "Invalid email format" };
-  }
-  const cleanEmail = user.email.trim().toLowerCase();
-  return { ok: true, email: cleanEmail };
-};
-
-const anvandare = registerUser({mail: "Viktor@hotmail.com"})
-console.log(anvandare);
-
+}, 2000)
