@@ -1983,16 +1983,40 @@
 
 // console.log("Date");
 
-const products = [
-  { name: "Banana", price: 100},
-  { name: "Apple", price: 20},
-  { name: "Ananas", price: 70},
-  { name: "Pear", price: 50},
-];
+// const products = [
+//   { name: "Banana", price: 100},
+//   { name: "Apple", price: 20},
+//   { name: "Ananas", price: 70},
+//   { name: "Pear", price: 50},
+// ];
 
-setTimeout(() => {
-  const cheapProducts = products.filter((p) => p.price < 100);
-  for(const product of cheapProducts){
-    console.log(`${product.name} ${product.price}`);
-  }
-}, 2000)
+// setTimeout(() => {
+//   const cheapProducts = products.filter((p) => p.price < 100);
+//   for(const product of cheapProducts){
+//     console.log(`${product.name} ${product.price}`);
+//   }
+// }, 2000)
+
+// const product = { name: "Mouse", stock: 10 };
+
+// const a = product;
+// const b = { ...product };
+
+// a.stock += 5;
+// b.stock += 2;
+
+// console.log(product.stock);
+// console.log(a.stock);
+// console.log(b.stock);
+
+// const product = { name: "Mouse", stock: 5 };
+
+// const text = JSON.stringify(product);
+// const result = JSON.parse(text);
+
+// console.log(text);
+// console.log(result);
+
+const text = {name: "trasig json"};
+
+textbit = JSON.parse(text)
