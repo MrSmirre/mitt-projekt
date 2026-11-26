@@ -2039,7 +2039,7 @@
 // setTimeout(() => console.log("A"), 100)
 // setTimeout(() => {
 //   console.log("B")
-//   setTimeout(() => console.log("C"), 0)  
+//   setTimeout(() => console.log("C"), 0)
 // }, 50)
 // setTimeout(() => console.log("D"), 0)
 
@@ -2065,13 +2065,12 @@
 //   const badges = await getBadges(user.name)
 
 //   console.log("Badges:", badges);
-    
+
 //   }catch(error){
 //       console.error("Failed:",
 //         error.massege)
 //     }
 // }
-
 
 // const stepOne = async () => "Step 1 OK";
 // const stepTwo = async () => {
@@ -2104,3 +2103,4 @@
 //     }
 // };
 
+const varifyCostumer = async(id)
