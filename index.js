@@ -2014,19 +2014,3 @@
 // const text = JSON.stringify(product);
 // const result = JSON.parse(text);
 
-// console.log(text);
-// console.log(result);
-
-// const text = {name: "trasig json"};
-
-// textbit = JSON.parse(text)
-
-// const car = {
-//   brand: "Volvo",
-//   mileage: 1200
-// };
-
-// car.inspected = true
-// car.model = "Xc70"
-// console.log(car);
-
