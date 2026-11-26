@@ -2017,6 +2017,90 @@
 // console.log(text);
 // console.log(result);
 
-const text = {name: "trasig json"};
+// const text = {name: "trasig json"};
 
-textbit = JSON.parse(text)
+// textbit = JSON.parse(text)
+
+// const coffeePromise = "latte"
+
+// coffeePromise
+// .then((coffee) => {
+//   console.log("drick kaffe");
+// })
+// .catch(error => {
+//   console.log("finns inget kaffe");
+// })
+// .finally(() => {
+//   console.log("Klar");
+// })
+
+// const start = Date.now()
+
+// setTimeout(() => console.log("A"), 100)
+// setTimeout(() => {
+//   console.log("B")
+//   setTimeout(() => console.log("C"), 0)  
+// }, 50)
+// setTimeout(() => console.log("D"), 0)
+
+// while (Date.now() - start < 200) {}
+
+// console.log("E");
+
+// const showProfile = (userId) => {
+//   getUser(userId)
+//     .then((user) => getBadges(user.name))
+//     .then((badges) => {
+//       console.log("Badges:", badges);
+//     })
+//     .catch((error) => {
+//       console.error("Failed:",
+//         error.massege)
+//     })
+// }
+
+// const showProfile = async (userId) => {
+//   try{
+//   const user = await getUser(userId)
+//   const badges = await getBadges(user.name)
+
+//   console.log("Badges:", badges);
+    
+//   }catch(error){
+//       console.error("Failed:",
+//         error.massege)
+//     }
+// }
+
+
+// const stepOne = async () => "Step 1 OK";
+// const stepTwo = async () => {
+//   throw new Error("Database timeout");
+// };
+
+// const runApp = async () => {
+//   try {
+//     const res1 = await stepOne();
+//     console.log(res1);
+//     const res2 = await stepTwo();
+//     console.log(res2);
+//   } catch (error) {
+//     console.log("Caught:", error.message);
+//   } finally {
+//     console.log("Done!");
+//   }
+// };
+
+// runApp();
+
+// const showProfile = async (userId) => {
+//   try{
+//     const user = await getUser(userId)
+//     const badges = await getBadges(user.name)
+
+//     console.log("Badges:", badges);
+//   }catch(error){
+//       console.error("Failed:", error.message);
+//     }
+// };
+
